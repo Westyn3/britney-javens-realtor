@@ -4,523 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Britney Javens | North Atlanta Realtor — Buy & Sell Homes in Metro Atlanta</title>
-  <meta name="description" content="Britney Javens is a top-producing Realtor serving Fulton, Cobb, Forsyth, and Gwinnett counties. Expert guidance in buying and selling homes across North Atlanta." />
-  <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap');
- 
-:root {
-  --cream: #f9f5ef;
-  --warm-white: #fdfaf6;
-  --charcoal: #1c1c1c;
-  --dark: #111111;
-  --gold: #b8963e;
-  --gold-light: #d4aa5a;
-  --gold-pale: #f0e4c8;
-  --mid: #6b6b6b;
-  --border: #e0d8cc;
-  --nav-h: 72px;
-}
- 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
- 
-html { scroll-behavior: smooth; }
- 
-body {
-  font-family: 'Jost', sans-serif;
-  background: var(--warm-white);
-  color: var(--charcoal);
-  font-size: 16px;
-  line-height: 1.7;
-  font-weight: 300;
-}
- 
-/* ── NAV ── */
-nav {
-  position: sticky; top: 0; left: 0; right: 0; z-index: 100;
-  height: var(--nav-h);
-  background: rgba(253,250,246,0.95);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 48px;
-  transition: box-shadow 0.3s;
-}
-nav.scrolled { box-shadow: 0 2px 24px rgba(0,0,0,0.07); }
- 
-.nav-logo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.2rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: var(--charcoal);
-  text-decoration: none;
-  line-height: 1.2;
-}
-.nav-logo span { display: block; font-size: 0.7rem; font-family: 'Jost', sans-serif; font-weight: 400; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); }
- 
-.nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
-.nav-links a {
-  font-family: 'Jost', sans-serif; font-size: 0.78rem; font-weight: 500;
-  letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none;
-  color: var(--mid); transition: color 0.2s;
-}
-.nav-links a:hover, .nav-links a.active { color: var(--gold); }
- 
-.nav-cta {
-  font-family: 'Jost', sans-serif; font-size: 0.75rem; font-weight: 500;
-  letter-spacing: 0.12em; text-transform: uppercase;
-  background: var(--charcoal); color: var(--cream) !important;
-  padding: 10px 22px; text-decoration: none;
-  transition: background 0.2s;
-}
-.nav-cta:hover { background: var(--gold) !important; color: white !important; }
- 
-.nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
-.nav-hamburger span { display: block; width: 22px; height: 1.5px; background: var(--charcoal); margin: 5px 0; transition: all 0.3s; }
- 
-.mobile-menu {
-  display: none; position: fixed; top: var(--nav-h); left: 0; right: 0;
-  background: var(--warm-white); border-bottom: 1px solid var(--border);
-  padding: 24px 48px 32px; z-index: 99;
-  flex-direction: column; gap: 20px;
-}
-.mobile-menu.open { display: flex; }
-.mobile-menu a { font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; color: var(--mid); }
-.mobile-menu a:hover { color: var(--gold); }
- 
-/* ── PAGE WRAPPER ── */
-.page { padding-top: var(--nav-h); }
- 
-/* ── HERO ── */
-.hero {
-  min-height: 92vh; display: grid; grid-template-columns: 1fr 1fr;
-  background: var(--cream);
-}
-.hero-text {
-  display: flex; flex-direction: column; justify-content: center;
-  padding: 80px 64px 80px 80px;
-}
-.hero-eyebrow {
-  font-size: 0.72rem; font-weight: 500; letter-spacing: 0.2em;
-  text-transform: uppercase; color: var(--gold); margin-bottom: 20px;
-}
-.hero-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2.8rem, 4.5vw, 5rem);
-  font-weight: 300; line-height: 1.1;
-  color: var(--dark); margin-bottom: 28px;
-}
-.hero-title em { font-style: italic; color: var(--gold); }
-.hero-subtitle {
-  font-size: 1.05rem; color: var(--mid); max-width: 400px;
-  margin-bottom: 48px; line-height: 1.8;
-}
-.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
- 
-.btn-primary {
-  display: inline-block; padding: 14px 36px;
-  background: var(--charcoal); color: var(--cream);
-  font-family: 'Jost', sans-serif; font-size: 0.78rem;
-  font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase;
-  text-decoration: none; transition: background 0.2s;
-}
-.btn-primary:hover { background: var(--gold); }
- 
-.btn-outline {
-  display: inline-block; padding: 13px 32px;
-  border: 1px solid var(--charcoal); color: var(--charcoal);
-  font-family: 'Jost', sans-serif; font-size: 0.78rem;
-  font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase;
-  text-decoration: none; transition: all 0.2s;
-}
-.btn-outline:hover { background: var(--charcoal); color: var(--cream); }
- 
-.hero-phone { margin-top: 40px; font-size: 0.8rem; color: var(--mid); letter-spacing: 0.05em; }
-.hero-phone a { color: var(--gold); text-decoration: none; font-weight: 500; }
- 
-.hero-image {
-  position: relative; overflow: hidden;
-  background: #d6c9b4;
-}
-.hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.hero-image-overlay {
-  position: absolute; bottom: 32px; left: 32px; right: 32px;
-  background: rgba(253,250,246,0.92);
-  padding: 20px 24px;
-}
-.hero-image-overlay p { font-size: 0.78rem; letter-spacing: 0.05em; color: var(--mid); }
-.hero-image-overlay strong { color: var(--charcoal); font-weight: 500; }
- 
-/* ── SECTION BASICS ── */
-section { padding: 96px 0; }
-.container { max-width: 1140px; margin: 0 auto; padding: 0 48px; }
-.section-label {
-  font-size: 0.7rem; font-weight: 500; letter-spacing: 0.22em;
-  text-transform: uppercase; color: var(--gold); margin-bottom: 16px;
-}
-.section-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2rem, 3.5vw, 3.2rem);
-  font-weight: 300; line-height: 1.15; color: var(--dark);
-  margin-bottom: 20px;
-}
-.section-title em { font-style: italic; }
-.section-intro { font-size: 1rem; color: var(--mid); max-width: 560px; line-height: 1.8; }
- 
-/* ── INTRO BAND ── */
-.intro-band { background: var(--charcoal); padding: 56px 0; }
-.intro-band .container { display: flex; gap: 64px; align-items: center; }
-.intro-stat { text-align: center; flex: 1; }
-.intro-stat .number {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 3.2rem; font-weight: 300; color: var(--gold); line-height: 1;
-}
-.intro-stat .label { font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-top: 8px; }
-.intro-divider { width: 1px; height: 60px; background: rgba(255,255,255,0.15); }
- 
-/* ── SERVICES ── */
-.services { background: var(--warm-white); }
-.services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-top: 64px; }
-.service-card {
-  background: var(--cream); padding: 48px 40px;
-  border: 1px solid var(--border);
-  transition: border-color 0.2s, transform 0.2s;
-}
-.service-card:hover { border-color: var(--gold); }
-.service-icon { font-size: 1.8rem; margin-bottom: 20px; }
-.service-card h3 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.5rem; font-weight: 400; margin-bottom: 12px;
-}
-.service-card p { font-size: 0.92rem; color: var(--mid); line-height: 1.8; }
- 
-/* ── ABOUT STRIP ── */
-.about-strip { background: var(--gold-pale); }
-.about-strip .container { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-.about-strip-image { position: relative; }
-.about-strip-image img { width: 100%; display: block; aspect-ratio: 4/5; object-fit: cover; }
-.about-strip-image::before {
-  content: ''; position: absolute; inset: -12px; border: 1px solid var(--gold);
-  z-index: -1;
-}
-.about-strip-text .section-intro { max-width: 100%; margin-bottom: 32px; }
-.checklist { list-style: none; margin: 24px 0 36px; }
-.checklist li {
-  padding: 8px 0; border-bottom: 1px solid rgba(184,150,62,0.2);
-  font-size: 0.9rem; color: var(--charcoal); display: flex; gap: 12px;
-}
-.checklist li::before { content: '✓'; color: var(--gold); font-weight: 600; flex-shrink: 0; }
- 
-/* ── TESTIMONIAL ── */
-.testimonial-section { background: var(--charcoal); text-align: center; }
-.testimonial-section blockquote {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
-  font-weight: 300; font-style: italic;
-  color: var(--cream); max-width: 760px; margin: 0 auto 28px;
-  line-height: 1.5;
-}
-.testimonial-section cite {
-  font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase;
-  color: var(--gold); font-style: normal;
-}
-.quote-mark {
-  font-family: 'Cormorant Garamond', serif; font-size: 5rem;
-  color: var(--gold); line-height: 0.6; display: block; margin-bottom: 24px;
-  opacity: 0.6;
-}
- 
-/* ── CONTACT BAND ── */
-.contact-band { background: var(--cream); }
-.contact-band .container { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
-.contact-info h3 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.8rem; font-weight: 300; margin-bottom: 24px;
-}
-.contact-detail { display: flex; gap: 12px; margin-bottom: 16px; align-items: flex-start; }
-.contact-detail .icon { color: var(--gold); font-size: 1rem; margin-top: 2px; flex-shrink: 0; }
-.contact-detail p { font-size: 0.92rem; color: var(--mid); }
-.contact-detail a { color: var(--gold); text-decoration: none; }
-.hours-grid { display: grid; grid-template-columns: 80px 1fr; gap: 6px 16px; font-size: 0.85rem; margin-top: 20px; }
-.hours-grid .day { color: var(--mid); font-weight: 500; }
-.hours-grid .time { color: var(--charcoal); }
- 
-/* FORM */
-.contact-form { display: flex; flex-direction: column; gap: 16px; }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.form-group { display: flex; flex-direction: column; gap: 6px; }
-.form-group label { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mid); font-weight: 500; }
-.form-group input, .form-group textarea, .form-group select {
-  padding: 12px 16px; border: 1px solid var(--border);
-  background: var(--warm-white); font-family: 'Jost', sans-serif;
-  font-size: 0.9rem; color: var(--charcoal); outline: none;
-  transition: border-color 0.2s;
-}
-.form-group input:focus, .form-group textarea:focus { border-color: var(--gold); }
-.form-group textarea { resize: vertical; min-height: 120px; }
-.form-note { font-size: 0.75rem; color: var(--mid); line-height: 1.6; }
-.form-success { background: var(--gold-pale); border: 1px solid var(--gold); padding: 16px 20px; font-size: 0.9rem; color: var(--charcoal); display: none; }
- 
- 
- 
-/* ── PAGE HERO (inner pages) ── */
-.page-hero {
-  background: var(--cream); padding: 96px 0 72px;
-  border-bottom: 1px solid var(--border);
-}
-.page-hero .section-label { margin-bottom: 12px; }
-.page-hero h1 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2.2rem, 4vw, 4rem);
-  font-weight: 300; color: var(--dark); line-height: 1.1;
-}
-.page-hero p { font-size: 1rem; color: var(--mid); max-width: 520px; margin-top: 16px; line-height: 1.8; }
- 
-/* ── ABOUT PAGE ── */
-.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 56px; }
-.team-card { background: var(--cream); border: 1px solid var(--border); overflow: hidden; }
-.team-card-img { aspect-ratio: 3/4; background: #d6c9b4; overflow: hidden; }
-.team-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.team-card-body { padding: 28px 24px; }
-.team-card-body h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 400; margin-bottom: 8px; }
-.team-card-body p { font-size: 0.88rem; color: var(--mid); line-height: 1.7; margin-bottom: 16px; }
-.team-card-body a { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold-pale); padding-bottom: 2px; }
- 
-.values-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 48px; }
-.value-card { padding: 32px; border: 1px solid var(--border); background: var(--cream); }
-.value-card h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 400; margin-bottom: 8px; color: var(--dark); }
-.value-card p { font-size: 0.88rem; color: var(--mid); line-height: 1.7; }
- 
-/* ── VENDORS PAGE ── */
-.vendor-category { margin-bottom: 64px; }
-.vendor-category-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.6rem; font-weight: 400;
-  border-bottom: 1px solid var(--border); padding-bottom: 16px;
-  margin-bottom: 28px; color: var(--dark);
-  display: flex; align-items: center; gap: 12px;
-}
-.vendor-category-title .cat-icon { font-size: 1.2rem; }
-.vendor-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
-.vendor-card {
-  background: var(--cream); border: 1px solid var(--border); padding: 28px 24px;
-  transition: border-color 0.2s;
-}
-.vendor-card:hover { border-color: var(--gold); }
-.vendor-card h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 400; margin-bottom: 6px; color: var(--dark); }
-.vendor-card .contact-name { font-size: 0.8rem; color: var(--mid); margin-bottom: 6px; }
-.vendor-card .vendor-phone { font-size: 0.9rem; font-weight: 500; color: var(--charcoal); margin-bottom: 10px; }
-.vendor-card .vendor-phone a { color: var(--charcoal); text-decoration: none; }
-.vendor-card .vendor-desc { font-size: 0.83rem; color: var(--mid); line-height: 1.7; margin-bottom: 14px; font-style: italic; }
-.vendor-card .vendor-link { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold-pale); padding-bottom: 2px; }
-.vendor-disclaimer { background: var(--gold-pale); border-left: 3px solid var(--gold); padding: 20px 24px; font-size: 0.85rem; color: var(--mid); line-height: 1.7; margin-top: 48px; }
- 
-/* ── BLOG PAGE ── */
-.blog-coming { text-align: center; padding: 80px 0; }
-.blog-coming .big-icon { font-size: 3rem; margin-bottom: 20px; }
-.blog-coming h2 { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 300; margin-bottom: 12px; }
-.blog-coming p { color: var(--mid); max-width: 400px; margin: 0 auto 28px; }
- 
-/* ── RESPONSIVE ── */
-@media (max-width: 900px) {
-  nav { padding: 0 24px; }
-  .nav-links { display: none; }
-  .nav-hamburger { display: block; }
-  .container { padding: 0 24px; }
- 
-  .hero { grid-template-columns: 1fr; min-height: auto; }
-  .hero-text { padding: 56px 24px 48px; }
-  .hero-image { height: 55vw; max-height: 420px; }
- 
-  .intro-band .container { flex-wrap: wrap; gap: 32px; }
-  .intro-divider { display: none; }
- 
-  .services-grid { grid-template-columns: 1fr; }
-  .about-strip .container { grid-template-columns: 1fr; gap: 40px; }
-  .contact-band .container { grid-template-columns: 1fr; gap: 48px; }
-  .form-row { grid-template-columns: 1fr; }
-  .team-grid { grid-template-columns: 1fr 1fr; }
-  .values-grid { grid-template-columns: 1fr; }
-  .footer-top { flex-direction: column; gap: 24px; }
-  .footer-links { flex-wrap: wrap; gap: 16px; }
-  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
-  .mobile-menu { padding: 24px; }
-}
-@media (max-width: 600px) {
-  .team-grid { grid-template-columns: 1fr; }
-  section { padding: 64px 0; }
-}
- 
-/* ── FOOTER PROFILES STRIP ── */
-.footer-profiles {
-  background: var(--cream);
-  padding: 48px 0;
-  border-top: 1px solid var(--border);
-}
-.footer-profiles-inner {
-  max-width: 1140px; margin: 0 auto; padding: 0 48px;
-  text-align: center;
-}
-.footer-profiles-inner .fp-label {
-  font-size: 0.7rem; font-weight: 500; letter-spacing: 0.22em;
-  text-transform: uppercase; color: var(--gold); margin-bottom: 10px;
-}
-.footer-profiles-inner h3 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.6rem; font-weight: 300; color: var(--dark);
-  margin-bottom: 28px;
-}
-.footer-profiles-inner h3 em { font-style: italic; }
-.fp-links {
-  display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;
-}
-.fp-links a {
-  display: flex; align-items: center; gap: 8px;
-  padding: 10px 20px;
-  border: 1px solid var(--border);
-  background: white;
-  font-family: 'Jost', sans-serif; font-size: 0.78rem;
-  font-weight: 500; letter-spacing: 0.08em;
-  color: var(--charcoal) !important;
-  text-decoration: none;
-  transition: border-color 0.2s, color 0.2s;
-}
-.fp-links a:hover { border-color: var(--gold); color: var(--gold) !important; }
- 
-/* ── FOOTER MAIN ── */
-footer {
-  background: #111111 !important;
-  color: rgba(255,255,255,0.5);
-  padding: 48px 0 32px;
-}
-.footer-inner { max-width: 1140px; margin: 0 auto; padding: 0 48px; }
-.footer-top {
-  display: flex; justify-content: space-between;
-  align-items: flex-start; margin-bottom: 40px;
-}
-.footer-logo {
-  font-family: 'Cormorant Garamond', serif; font-size: 1.1rem;
-  color: rgba(255,255,255,0.8); font-weight: 400;
-}
-.footer-logo span {
-  display: block; font-family: 'Jost', sans-serif;
-  font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
-  color: var(--gold); margin-top: 4px;
-}
-.footer-nav { display: flex; gap: 28px; flex-wrap: wrap; align-items: center; }
-.footer-nav a {
-  font-family: 'Jost', sans-serif !important;
-  font-size: 0.75rem !important; letter-spacing: 0.1em !important;
-  text-transform: uppercase !important;
-  color: #ffffff !important;
-  text-decoration: none !important;
-  background: none !important;
-  border: none !important;
-  padding: 0 !important;
-  transition: color 0.2s;
-}
-.footer-nav a:hover { color: var(--gold) !important; }
-.footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.08);
-  padding-top: 24px;
-  display: flex; justify-content: space-between; align-items: center;
-}
-.footer-copy { font-size: 0.75rem; letter-spacing: 0.05em; color: rgba(255,255,255,0.5); }
-.footer-kw { font-size: 0.7rem; color: rgba(255,255,255,0.25); }
- 
-@media (max-width: 900px) {
-  .footer-profiles-inner { padding: 0 24px; }
-  .footer-top { flex-direction: column; gap: 24px; }
-  .footer-nav { flex-wrap: wrap; gap: 16px; }
-  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
-}
- 
-</style>
- 
-  <!-- Canonical & indexing -->
+  <meta name="description" content="Britney Javens is a licensed Realtor® with Keller Williams North Atlanta. Expert guidance buying and selling luxury homes, Lake Lanier properties, and North Georgia mountain retreats." />
+  <link rel="stylesheet" href="style.css" />
   <link rel="canonical" href="https://northatlantarealtor.homes/" />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Britney Javens" />
- 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="North Atlanta Realtor — Britney Javens" />
   <meta property="og:title" content="Britney Javens | North Atlanta Realtor — Buy & Sell Homes in Metro Atlanta" />
   <meta property="og:description" content="Britney Javens is a top-producing Realtor® serving Fulton, Cobb, Forsyth & Gwinnett counties. Expert guidance buying and selling homes across North Atlanta." />
   <meta property="og:url" content="https://northatlantarealtor.homes/" />
   <meta property="og:image" content="https://img1.wsimg.com/isteam/ip/498faf30-b116-4b56-80dd-5439c0ccdd4e/blob.png/:/cr=t:0%25,l:5.11%25,w:89.78%25,h:100%25/rs=w:1200,h:902,cg:true" />
- 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Britney Javens | North Atlanta Realtor — Buy & Sell Homes in Metro Atlanta" />
-  <meta name="twitter:description" content="Britney Javens is a top-producing Realtor® serving Fulton, Cobb, Forsyth & Gwinnett counties. Expert guidance buying and selling homes across North Atlanta." />
+  <meta name="twitter:description" content="Britney Javens is a top-producing Realtor® serving Fulton, Cobb, Forsyth & Gwinnett counties." />
   <meta name="twitter:image" content="https://img1.wsimg.com/isteam/ip/498faf30-b116-4b56-80dd-5439c0ccdd4e/blob.png/:/cr=t:0%25,l:5.11%25,w:89.78%25,h:100%25/rs=w:1200,h:902,cg:true" />
- 
-  <!-- Geo -->
   <meta name="geo.region" content="US-GA" />
   <meta name="geo.placename" content="Alpharetta, Georgia" />
   <meta name="geo.position" content="34.0754;-84.2941" />
   <meta name="ICBM" content="34.0754, -84.2941" />
- 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "RealEstateAgent",
-        "name": "Britney Javens – North Atlanta Realtor",
-        "url": "https://northatlantarealtor.homes/",
-        "telephone": "+16787808238",
-        "email": "Britneyj@kw.com",
-        "description": "Britney Javens is a licensed Realtor® with Keller Williams North Atlanta and part of The Legacy Team. She specializes in client care, local market insight, and digital marketing, helping buyers and sellers across North Georgia and the greater Atlanta area.",
-        "image": "https://img1.wsimg.com/isteam/ip/498faf30-b116-4b56-80dd-5439c0ccdd4e/blob.png/:/cr=t:0%25,l:5.11%25,w:89.78%25,h:100%25/rs=w:1200,h:902,cg:true",
-        "priceRange": "$$$",
-        "availableLanguage": "English",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "925 North Point Parkway",
-          "addressLocality": "Alpharetta",
-          "addressRegion": "GA",
-          "postalCode": "30022",
-          "addressCountry": "US"
-        },
-        "geo": { "@type": "GeoCoordinates", "latitude": 34.0754, "longitude": -84.2941 },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-          "opens": "07:00", "closes": "19:00"
-        },
-        "areaServed": ["Alpharetta, GA","Sandy Springs, GA","Duluth, GA","Johns Creek, GA","Sugar Hill, GA","Cumming, GA","Roswell, GA","Tucker, GA","Buford, GA","Dawsonville, GA","Lula, GA","Flowery Branch, GA","Braselton, GA","Pendergrass, GA","Dahlonega, GA","Gainesville, GA","Chestatee, GA","Woodstock, GA","Marietta, GA","Canton, GA","Milton, GA","Blue Ridge, GA","Ellijay, GA","Lake Lanier, GA","North Atlanta, GA","Lake Lanier","North Georgia"],
-        "sameAs": ["https://northatlantarealtor.homes/","https://maps.google.com/?cid=2382719725105451003","https://britneyj.kw.com/","https://www.buywithbritney.realtor/","https://www.realtor.com/realestateagents/631116af437786b96006a407","https://www.zillow.com/profile/Britneysellsatl","https://www.georgiamls.com/real-estate-agents/JAVENSBRIT","https://www.homes.com/real-estate-agents/britney-javens/qxsc10x/","https://www.instagram.com/britneysellsatl/","https://www.facebook.com/britneysellsatl/","https://www.linkedin.com/in/britneysellsatl/","https://www.youtube.com/@britneysellsatl","https://legacyteam.kw.com/"]
-      },
-      {
-        "@type": "Person",
-        "name": "Britney Javens",
-        "jobTitle": "Licensed Real Estate Agent",
-        "url": "https://northatlantarealtor.homes/",
-        "telephone": "+16787808238",
-        "email": "Britneyj@kw.com",
-        "image": "https://img1.wsimg.com/isteam/ip/498faf30-b116-4b56-80dd-5439c0ccdd4e/blob.png/:/cr=t:0%25,l:5.11%25,w:89.78%25,h:100%25/rs=w:1200,h:902,cg:true",
-        "colleague": { "@type": "Person", "name": "Karen Hilliard", "url": "https://northgaluxuryrealtor.com/about" },
-        "worksFor": { "@type": "Organization", "name": "Keller Williams North Atlanta" },
-        "sameAs": ["https://northatlantarealtor.homes/","https://maps.google.com/?cid=2382719725105451003","https://britneyj.kw.com/","https://www.buywithbritney.realtor/","https://www.realtor.com/realestateagents/631116af437786b96006a407","https://www.zillow.com/profile/Britneysellsatl","https://www.georgiamls.com/real-estate-agents/JAVENSBRIT","https://www.homes.com/real-estate-agents/britney-javens/qxsc10x/","https://www.instagram.com/britneysellsatl/","https://www.facebook.com/britneysellsatl/","https://www.linkedin.com/in/britneysellsatl/","https://www.youtube.com/@britneysellsatl","https://legacyteam.kw.com/"]
-      }
-    ]
-  }
+  {"@context":"https://schema.org","@graph":[{"@type":"RealEstateAgent","name":"Britney Javens – North Atlanta Realtor","url":"https://northatlantarealtor.homes/","telephone":"+16787808238","email":"Britneyj@kw.com","description":"Britney Javens is a licensed Realtor® with Keller Williams North Atlanta and part of The Legacy Team.","image":"https://img1.wsimg.com/isteam/ip/498faf30-b116-4b56-80dd-5439c0ccdd4e/blob.png/:/cr=t:0%25,l:5.11%25,w:89.78%25,h:100%25/rs=w:1200,h:902,cg:true","priceRange":"$$$","address":{"@type":"PostalAddress","streetAddress":"925 North Point Parkway","addressLocality":"Alpharetta","addressRegion":"GA","postalCode":"30022","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":34.0754,"longitude":-84.2941},"areaServed":["Alpharetta, GA","Milton, GA","Cumming, GA","Roswell, GA","Canton, GA","Gainesville, GA","Lake Lanier, GA","Blue Ridge, GA","Ellijay, GA","Dahlonega, GA","Buford, GA","Johns Creek, GA","Sandy Springs, GA","Woodstock, GA","Marietta, GA","North Georgia"],"sameAs":["https://northatlantarealtor.homes/","https://britneyj.kw.com/","https://www.buywithbritney.realtor/","https://www.realtor.com/realestateagents/631116af437786b96006a407","https://www.zillow.com/profile/Britneysellsatl","https://www.georgiamls.com/real-estate-agents/JAVENSBRIT","https://www.instagram.com/britneysellsatl/","https://www.facebook.com/britneysellsatl/","https://www.linkedin.com/in/britneysellsatl/","https://www.youtube.com/@britneysellsatl","https://legacyteam.kw.com/"]},{"@type":"Person","name":"Britney Javens","jobTitle":"Licensed Real Estate Agent","url":"https://northatlantarealtor.homes/","telephone":"+16787808238","email":"Britneyj@kw.com","colleague":{"@type":"Person","name":"Karen Hilliard","url":"https://northgaluxuryrealtor.com/about"},"worksFor":{"@type":"Organization","name":"Keller Williams North Atlanta"}}]}
   </script>
- 
 </head>
 <body>
  
 <!-- NAV -->
 <nav id="main-nav">
-  <a href="index.html" class="nav-logo">
-    Britney Javens
-    <span>North Atlanta Realtor</span>
-  </a>
+  <a href="index.html" class="nav-logo">Britney Javens<span>North Atlanta Realtor</span></a>
   <ul class="nav-links">
     <li><a href="index.html" class="active">Home</a></li>
     <li><a href="about.html">About</a></li>
+    <li><a href="market.html">Market</a></li>
     <li><a href="trusted-vendors.html">Trusted Vendors</a></li>
     <li><a href="blog.html">Blog</a></li>
     <li><a href="contact.html" class="nav-cta">Contact Me</a></li>
@@ -532,6 +47,7 @@ footer {
 <div class="mobile-menu" id="mobile-menu">
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
+  <a href="market.html">Market</a>
   <a href="trusted-vendors.html">Trusted Vendors</a>
   <a href="blog.html">Blog</a>
   <a href="contact.html">Contact Me</a>
@@ -543,14 +59,8 @@ footer {
   <section class="hero">
     <div class="hero-text">
       <p class="hero-eyebrow">North Atlanta Real Estate</p>
-      <h1 class="hero-title">
-        Your Home.<br>
-        Your <em>Legacy.</em><br>
-        Your Realtor.
-      </h1>
-      <p class="hero-subtitle">
-        Luxury homes, Lake Lanier waterfront properties, North Georgia mountain retreats, and new construction — Britney Javens is North Atlanta's trusted Realtor® for buyers and sellers across Alpharetta, Milton, Roswell, Cumming, and beyond.
-      </p>
+      <h1 class="hero-title">Your Home.<br>Your <em>Legacy.</em><br>Your Realtor.</h1>
+      <p class="hero-subtitle">Luxury homes, Lake Lanier waterfront properties, North Georgia mountain retreats, and new construction — Britney Javens is North Atlanta's trusted Realtor® for buyers and sellers across Alpharetta, Milton, Roswell, Cumming, and beyond.</p>
       <div class="hero-actions">
         <a href="contact.html" class="btn-primary">Let's Connect</a>
         <a href="about.html" class="btn-outline">Meet Britney</a>
@@ -558,35 +68,23 @@ footer {
       <p class="hero-phone">Call or text: <a href="tel:+16787808238">(678) 780-8238</a></p>
     </div>
     <div class="hero-image">
-      <img src="https://img1.wsimg.com/isteam/ip/f267a94f-d07e-4f80-a00a-bcf81a771128/britney.jpg/:/" alt="Britney Javens — North Atlanta Realtor" />
+      <img src="hero-house.jpg" alt="Luxury North Atlanta Home — Britney Javens Realtor" />
       <div class="hero-image-overlay">
-        <p><strong>Britney Javens</strong> — Keller Williams Realty<br>Serving Fulton · Cobb · Forsyth · Gwinnett</p>
+        <p><strong>Britney Javens</strong> — Keller Williams North Atlanta<br>Milton · Alpharetta · Cumming · Cobb · Forsyth · Gainesville · Buford · Lake Lanier · North Georgia</p>
       </div>
     </div>
   </section>
  
-  <!-- STATS BAND -->
+  <!-- STATS -->
   <div class="intro-band">
     <div class="container">
-      <div class="intro-stat">
-        <div class="number">4+</div>
-        <div class="label">Years of Experience</div>
-      </div>
+      <div class="intro-stat"><div class="number">4+</div><div class="label">Years of Experience</div></div>
       <div class="intro-divider"></div>
-      <div class="intro-stat">
-        <div class="number">4</div>
-        <div class="label">Counties Served</div>
-      </div>
+      <div class="intro-stat"><div class="number">4</div><div class="label">Counties Served</div></div>
       <div class="intro-divider"></div>
-      <div class="intro-stat">
-        <div class="number">2</div>
-        <div class="label">Dedicated Realtors</div>
-      </div>
+      <div class="intro-stat"><div class="number">2</div><div class="label">Dedicated Realtors</div></div>
       <div class="intro-divider"></div>
-      <div class="intro-stat">
-        <div class="number">100%</div>
-        <div class="label">Client Commitment</div>
-      </div>
+      <div class="intro-stat"><div class="number">100%</div><div class="label">Client Commitment</div></div>
     </div>
   </div>
  
@@ -601,25 +99,25 @@ footer {
           <div class="service-icon">🏡</div>
           <h3>Buying a Home</h3>
           <p>Access exclusive listings in top North Atlanta neighborhoods. Expert advice on schools, amenities, and lifestyle options — from showings to the closing table. We listen and understand your goals.</p>
-          <a href="buying.html" style="display:inline-block;margin-top:20px;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-pale);padding-bottom:2px;">Learn More →</a>
+          <a href="buying.html" class="learn-more">Learn More →</a>
         </div>
         <div class="service-card">
           <div class="service-icon">💰</div>
           <h3>Selling Your Home</h3>
           <p>Custom home valuations backed by local data. Professional staging, high-end photography, and targeted marketing campaigns to attract qualified buyers and maximize your sale price.</p>
-          <a href="selling.html" style="display:inline-block;margin-top:20px;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-pale);padding-bottom:2px;">Learn More →</a>
+          <a href="selling.html" class="learn-more">Learn More →</a>
         </div>
         <div class="service-card">
           <div class="service-icon">📍</div>
           <h3>Local Market Expertise</h3>
-          <p>Deep knowledge of Fulton, Cobb, Forsyth, and Gwinnett counties. From luxury lake properties to North Georgia mountain retreats and Atlanta's thriving communities.</p>
-          <a href="market.html" style="display:inline-block;margin-top:20px;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-pale);padding-bottom:2px;">Learn More →</a>
+          <p>Deep knowledge of Alpharetta, Milton, Cumming, Forsyth, Lake Lanier, and beyond. From luxury lake properties to North Georgia mountain retreats and Atlanta's thriving communities.</p>
+          <a href="market.html" class="learn-more">Learn More →</a>
         </div>
         <div class="service-card">
           <div class="service-icon">🤝</div>
           <h3>Concierge-Level Service</h3>
           <p>Two skilled Realtors collaborating on every transaction. Generational insight into North Georgia living. A team that treats every client like family — from start to finish.</p>
-          <a href="concierge.html" style="display:inline-block;margin-top:20px;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-pale);padding-bottom:2px;">Learn More →</a>
+          <a href="concierge.html" class="learn-more">Learn More →</a>
         </div>
       </div>
     </div>
@@ -634,9 +132,7 @@ footer {
       <div class="about-strip-text">
         <p class="section-label">About Britney</p>
         <h2 class="section-title">Your Top<br><em>North Atlanta Agent</em></h2>
-        <p class="section-intro">
-          From luxury homes in Alpharetta and Milton to lakefront properties on Lake Lanier and mountain cabins in Blue Ridge and Ellijay — Britney Javens is a licensed Realtor® with Keller Williams North Atlanta and the go-to expert for buyers and sellers across Forsyth, Cherokee, Fulton, Hall, and Gwinnett counties.
-        </p>
+        <p class="section-intro">From luxury homes in Alpharetta and Milton to lakefront properties on Lake Lanier and mountain cabins in Blue Ridge and Ellijay — Britney Javens is a licensed Realtor® with Keller Williams North Atlanta and the go-to expert for buyers and sellers across Forsyth, Cherokee, Fulton, Hall, and Gwinnett counties.</p>
         <ul class="checklist">
           <li>Two skilled Realtors on every transaction</li>
           <li>Generational insight into North Georgia living</li>
@@ -653,191 +149,103 @@ footer {
   <section class="testimonial-section">
     <div class="container">
       <span class="quote-mark">"</span>
-      <blockquote>
-        Britney's kindness, responsiveness, and unwavering commitment made every step of our home search smooth and completely stress-free.
-      </blockquote>
+      <blockquote>Britney's kindness, responsiveness, and unwavering commitment made every step of our home search smooth and completely stress-free.</blockquote>
       <cite>— A Happy North Atlanta Client</cite>
     </div>
   </section>
  
-  <!-- CONTACT PREVIEW -->
-  <section class="contact-band">
-    <div class="container">
-      <div class="contact-info">
-        <p class="section-label">Get In Touch</p>
-        <h2 class="section-title">I Can't Wait<br><em>to Connect!</em></h2>
-        <div class="contact-detail">
-          <span class="icon">📍</span>
-          <p>925 North Point Parkway<br>Alpharetta, GA, USA</p>
-        </div>
-        <div class="contact-detail">
-          <span class="icon">📞</span>
-          <p><a href="tel:6787808238">(678) 780-8238</a></p>
-        </div>
-        <div class="contact-detail">
-          <span class="icon">✉️</span>
-          <p><a href="mailto:Britneyj@kw.com">Britneyj@kw.com</a></p>
-        </div>
-        <div class="hours-grid" style="margin-top:24px;">
-          <span class="day">Mon–Sat</span><span class="time">9:00 am – 8:00 pm</span>
-          <span class="day">Sunday</span><span class="time">12:30 pm – 7:30 pm</span>
-        </div>
-      </div>
-      <div>
-        <p class="section-label">Send a Message</p>
-        <div id="form-success" class="form-success">Thanks! I'll be in touch soon. 🏡</div>
-        <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Your Name *</label>
-              <input type="text" id="name" name="name" required placeholder="Jane Smith" />
-            </div>
-            <div class="form-group">
-              <label for="email">Email Address *</label>
-              <input type="email" id="email" name="email" required placeholder="jane@email.com" />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="(678) 000-0000" />
-          </div>
-          <div class="form-group">
-            <label for="message">How can I help?</label>
-            <textarea id="message" name="message" placeholder="I'm looking to buy / sell / just have questions..."></textarea>
-          </div>
-          <button type="submit" class="btn-primary" style="border:none;cursor:pointer;">Send Message</button>
-        </form>
-      </div>
-    </div>
-  </section>
- 
 </div>
  
+<!-- ═══════════ FOOTER — on every page ═══════════ -->
  
- 
- 
- 
-<script>
-// Nav scroll shadow
-window.addEventListener('scroll', () => {
-  document.querySelector('nav')?.classList.toggle('scrolled', window.scrollY > 20);
-});
- 
-// Mobile menu toggle
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobile-menu');
-if (hamburger && mobileMenu) {
-  hamburger.addEventListener('click', () => {
-    mobileMenu.classList.toggle('open');
-  });
-  // Close on link click
-  mobileMenu.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => mobileMenu.classList.remove('open'));
-  });
-}
- 
-// Set active nav link
-const currentPath = window.location.pathname;
-document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(a => {
-  const href = a.getAttribute('href');
-  if (href === currentPath || (currentPath === '/' && href === 'index.html') ||
-      (href !== 'index.html' && href !== '/' && currentPath.includes(href.replace('.html','')))) {
-    a.classList.add('active');
-  }
-});
- 
-// Contact form (Formspree-ready)
-const form = document.getElementById('contact-form');
-if (form) {
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    const success = document.getElementById('form-success');
-    btn.textContent = 'Sending...';
-    btn.disabled = true;
- 
-    const formspreeEndpoint = form.getAttribute('action');
-    if (formspreeEndpoint && formspreeEndpoint.includes('formspree')) {
-      try {
-        const res = await fetch(formspreeEndpoint, {
-          method: 'POST',
-          body: new FormData(form),
-          headers: { 'Accept': 'application/json' }
-        });
-        if (res.ok) {
-          form.reset();
-          if (success) { success.style.display = 'block'; }
-          btn.textContent = 'Sent!';
-        } else {
-          btn.textContent = 'Error — try emailing directly';
-          btn.disabled = false;
-        }
-      } catch {
-        btn.textContent = 'Error — please email directly';
-        btn.disabled = false;
-      }
-    } else {
-      // Demo mode — just show success
-      setTimeout(() => {
-        form.reset();
-        if (success) { success.style.display = 'block'; }
-        btn.textContent = 'Sent!';
-      }, 800);
-    }
-  });
-}
- 
-</script>
- 
-<!-- FOOTER -->
-<div class="footer-profiles">
-  <div class="footer-profiles-inner">
-    <p class="fp-label">Find Me Online</p>
-    <h3>Verified Across Every <em>Major Platform</em></h3>
-    <div class="fp-links">
-      <a href="https://www.zillow.com/profile/Britneysellsatl" target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L1.5 9.5h3V22h6v-7h3v7h6V9.5h3L12 0z"/></svg>Zillow
-      </a>
-      <a href="https://www.realtor.com/realestateagents/631116af437786b96006a407" target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>Realtor.com
-      </a>
-      <a href="https://www.georgiamls.com/real-estate-agents/JAVENSBRIT" target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>Georgia MLS
-      </a>
-      <a href="https://britneyj.kw.com/" target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>Keller Williams
-      </a>
-      <a href="https://nextdoor.com/pages/britney-javens-realtor-gainesville-ga/" target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Nextdoor
-      </a>
-      <a href="https://www.linkedin.com/in/britneysellsatl/" target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn
-      </a>
-      <a href="https://www.youtube.com/channel/UCke1YKJZoCyOI-bDyOpbhpg" target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>YouTube
-      </a>
+<!-- 1. Get In Touch -->
+<div class="footer-contact">
+  <div class="container">
+    <div class="contact-info-col">
+      <p class="section-label">Get In Touch</p>
+      <h2>I Can't Wait<br><em>to Connect!</em></h2>
+      <div class="contact-detail">
+        <span class="icon">📍</span>
+        <p>925 North Point Parkway<br>Alpharetta, GA 30022</p>
+      </div>
+      <div class="contact-detail">
+        <span class="icon">📞</span>
+        <p><a href="tel:6787808238">(678) 780-8238</a></p>
+      </div>
+      <div class="contact-detail">
+        <span class="icon">✉️</span>
+        <p><a href="mailto:Britneyj@kw.com">Britneyj@kw.com</a></p>
+      </div>
+      <div class="hours-grid" style="margin-top:24px;">
+        <span class="day">Mon–Sat</span><span class="time">9:00 am – 8:00 pm</span>
+        <span class="day">Sunday</span><span class="time">12:30 pm – 7:30 pm</span>
+      </div>
+    </div>
+    <div>
+      <p class="section-label">Send a Message</p>
+      <div id="form-success" class="form-success">Thanks! I'll be in touch soon. 🏡</div>
+      <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Jane Smith" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="jane@email.com" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="(678) 000-0000" />
+        </div>
+        <div class="form-group">
+          <label for="message">How can I help?</label>
+          <textarea id="message" name="message" placeholder="I'm looking to buy / sell / just have questions..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
     </div>
   </div>
 </div>
-<footer>
-  <div class="footer-inner">
-    <div class="footer-top">
+ 
+<!-- 2. Find Me Online -->
+<div class="footer-profiles">
+  <div class="container">
+    <p class="fp-label">Find Me Online</p>
+    <h3>Verified Across Every <em>Major Platform</em></h3>
+    <div class="fp-links">
+      <a href="https://www.zillow.com/profile/Britneysellsatl" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L1.5 9.5h3V22h6v-7h3v7h6V9.5h3L12 0z"/></svg>Zillow</a>
+      <a href="https://www.realtor.com/realestateagents/631116af437786b96006a407" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>Realtor.com</a>
+      <a href="https://www.georgiamls.com/real-estate-agents/JAVENSBRIT" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>Georgia MLS</a>
+      <a href="https://britneyj.kw.com/" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>Keller Williams</a>
+      <a href="https://nextdoor.com/pages/britney-javens-realtor-gainesville-ga/" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Nextdoor</a>
+      <a href="https://www.linkedin.com/in/britneysellsatl/" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
+      <a href="https://www.youtube.com/channel/UCke1YKJZoCyOI-bDyOpbhpg" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>YouTube</a>
+    </div>
+  </div>
+</div>
+ 
+<!-- 3. Black Footer Bar -->
+<div class="footer-bar">
+  <div class="footer-bar-inner">
+    <div class="footer-bar-top">
       <div class="footer-logo">Britney Javens<span>North Atlanta Realtor</span></div>
       <nav class="footer-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
         <a href="market.html">Market</a>
+        <a href="contact.html">Contact</a>
         <a href="trusted-vendors.html">Trusted Vendors</a>
         <a href="blog.html">Blog</a>
       </nav>
     </div>
-    <div class="footer-bottom">
+    <div class="footer-bar-bottom">
       <span class="footer-copy">© 2026 North Atlanta Realtor — All Rights Reserved.</span>
       <span class="footer-kw">Keller Williams Realty · Alpharetta, GA</span>
     </div>
   </div>
-</footer>
+</div>
  
 <script src="main.js"></script>
 </body>
