@@ -113,10 +113,11 @@ section { padding: 96px 0; }
  
 /* VENDORS */
 .vendor-category { margin-bottom: 64px; }
-.vendor-category-title { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 400; border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 28px; color: var(--dark); display: flex; align-items: center; gap: 12px; }
+.vendor-category-title { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 400; border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 28px; color: var(--dark); display: flex; align-items: center; gap: 12px; justify-content: center; }
 .vendor-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
 .vendor-card { background: var(--cream); border: 1px solid var(--border); padding: 28px 24px; transition: border-color 0.2s; }
 .vendor-card:hover { border-color: var(--gold); }
+.vendor-card { text-align: center; }
 .vendor-card h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 400; margin-bottom: 6px; color: var(--dark); }
 .vendor-card .contact-name { font-size: 0.8rem; color: var(--mid); margin-bottom: 6px; }
 .vendor-card .vendor-phone { font-size: 0.9rem; font-weight: 500; color: var(--charcoal); margin-bottom: 10px; }
