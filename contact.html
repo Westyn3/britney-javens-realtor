@@ -97,11 +97,23 @@
       <p class="section-label" style="text-align:center;">Schedule Online</p>
       <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:300;color:white;margin-bottom:16px;">Book a <em style="font-style:italic;color:var(--gold);">Free Consultation</em></h2>
       <p style="color:rgba(255,255,255,0.6);max-width:520px;margin:0 auto 40px;line-height:1.8;">Pick a time that works for you — no phone tag, no waiting. Britney will confirm and reach out before your call.</p>
-      <!-- Calendly inline widget -->
-      <div class="calendly-inline-widget" data-url="https://calendly.com/britneyj-xee/buyer-consultation-virtual?hide_landing_page_details=1&hide_gdpr_banner=1&background_color=1c1c1c&text_color=fdfaf6&primary_color=b8963e" style="min-width:320px;height:700px;"></div>
-      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+      <button onclick="Calendly.initPopupWidget({url:'https://calendly.com/britneyj-xee/buyer-consultation-virtual'});return false;" class="btn-primary" style="font-size:0.88rem;padding:16px 40px;cursor:pointer;border:none;">
+        📅 Book a Virtual Consultation
+      </button>
     </div>
   </div>
+ 
+  <!-- GOOGLE REVIEWS -->
+  <section style="background:var(--cream);padding:80px 0;text-align:center;border-top:1px solid var(--border);">
+    <div class="container">
+      <p class="section-label" style="text-align:center;">Client Reviews</p>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:300;color:var(--dark);margin-bottom:40px;">What Clients Are<br><em style="font-style:italic;color:var(--gold);">Saying About Britney</em></h2>
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+      <div class="elfsight-app-81461d18-bb85-4cce-a69b-d997c87cfb5f" data-elfsight-app-lazy></div>
+    </div>
+  </section>
  
   <!-- CONTACT GRID -->
   <div class="container">
@@ -195,15 +207,6 @@
  
 </div>
  
-<!-- GOOGLE REVIEWS -->
-<section style="background:var(--cream);padding:80px 0;text-align:center;border-top:1px solid var(--border);">
-  <div class="container">
-    <p class="section-label" style="text-align:center;">Client Reviews</p>
-    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:300;color:var(--dark);margin-bottom:40px;">What Clients Are<br><em style="font-style:italic;color:var(--gold);">Saying About Britney</em></h2>
-    <script src="https://elfsightcdn.com/platform.js" async></script>
-    <div class="elfsight-app-81461d18-bb85-4cce-a69b-d997c87cfb5f" data-elfsight-app-lazy></div>
-  </div>
-</section>
  
 <!-- FOOTER (no duplicate form on this page) -->
  
@@ -246,3 +249,4 @@
 <script src="main.js"></script>
 </body>
 </html>
+ 
