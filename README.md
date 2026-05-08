@@ -2,7 +2,7 @@
 
 A professional real estate website for **Britney Javens**, a licensed Realtor® with Keller Williams North Atlanta. The site serves buyers and sellers across Metro Atlanta and North Georgia, including Alpharetta, Milton, Cumming, Roswell, Lake Lanier, and beyond.
 
-🌐 **Live Site:** [northatlantarealtor.homes](https://northatlantarealtor.homes/)
+**Live Site:** [northatlantarealtor.homes](https://northatlantarealtor.homes/)
 
 ---
 
@@ -39,13 +39,13 @@ This is a static, multi-page marketing website built with vanilla HTML, CSS, and
 
 ## Features
 
-- ✅ Fully responsive / mobile-friendly layout
-- ✅ SEO-optimized with Open Graph, Twitter Card, and geo meta tags
-- ✅ Structured data (JSON-LD) for rich search results
-- ✅ Verified profile links (Zillow, Realtor.com, Georgia MLS, KW, LinkedIn, YouTube)
-- ✅ Contact form powered by Formspree
-- ✅ Hamburger mobile navigation menu
-- ✅ Social proof testimonial section
+- Fully responsive / mobile-friendly layout
+- SEO-optimized with Open Graph, Twitter Card, and geo meta tags
+- Structured data (JSON-LD) for rich search results
+- Verified profile links (Zillow, Realtor.com, Georgia MLS, KW, LinkedIn, YouTube)
+- Contact form powered by Formspree
+- Hamburger mobile navigation menu
+- Social proof testimonial section
 
 ---
 
