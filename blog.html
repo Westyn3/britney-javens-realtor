@@ -17,7 +17,7 @@
   <meta property="og:image" content="https://img1.wsimg.com/isteam/ip/498faf30-b116-4b56-80dd-5439c0ccdd4e/blob.png/:/cr=t:0%25,l:5.11%25,w:89.78%25,h:100%25/rs=w:1200,h:902,cg:true" />
   <meta name="geo.region" content="US-GA" />
   <meta name="geo.placename" content="Alpharetta, Georgia" />
-
+ 
   <style>
     .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 56px; }
     .blog-card { background: var(--cream); border: 1px solid var(--border); overflow: hidden; transition: border-color 0.2s; text-decoration: none; color: inherit; display: flex; flex-direction: column; }
@@ -40,7 +40,7 @@
   </style>
 </head>
 <body>
-
+ 
 <!-- NAV -->
 <nav id="main-nav">
   <a href="index.html" class="nav-logo">Britney Javens<span>North Atlanta Realtor</span></a>
@@ -64,9 +64,9 @@
   <a href="blog.html">Blog</a>
   <a href="contact.html">Contact Me</a>
 </div>
-
+ 
 <div class="page">
-
+ 
   <!-- PAGE HERO -->
   <div class="page-hero">
     <div class="container">
@@ -75,11 +75,11 @@
       <p>Market updates, home buying tips, seller strategies, and local North Atlanta insights — straight from Britney.</p>
     </div>
   </div>
-
+ 
   <!-- BLOG POSTS -->
   <section style="background:var(--warm-white);padding:80px 0;">
     <div class="container">
-
+ 
       <!-- ═══════════════════════════════════════════
            BLOG POST CARDS
            To add a new post:
@@ -89,42 +89,43 @@
               - The date, category, title, excerpt
            That's it!
       ═══════════════════════════════════════════ -->
-
+ 
       <!-- Posts load automatically from Blogger -->
       <div class="blog-grid" id="blog-grid">
         <p style="color:var(--mid);text-align:center;grid-column:1/-1;padding:40px 0;">Loading posts...</p>
       </div>
-
+ 
       <script>
-        // Fetch posts from Blogger RSS feed
         const BLOG_URL = 'https://northatlantarealtor.blogspot.com';
-        const RSS_URL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(BLOG_URL + '/feeds/posts/default?alt=rss')}&api_key=public&count=12`;
-
+        const FEED_URL = BLOG_URL + '/feeds/posts/default?alt=json&max-results=12';
         const emojis = ['🏡','🔑','⛵','🏔️','📍','💰','🏘️','✨','📊','🤝','🏗️','🌿'];
-
-        fetch(RSS_URL)
+ 
+        fetch(FEED_URL)
           .then(r => r.json())
           .then(data => {
             const grid = document.getElementById('blog-grid');
-            if (!data.items || data.items.length === 0) {
+            const entries = data.feed.entry;
+            if (!entries || entries.length === 0) {
               grid.innerHTML = '<p style="color:var(--mid);text-align:center;grid-column:1/-1;padding:40px 0;">No posts yet — check back soon!</p>';
               return;
             }
-            grid.innerHTML = data.items.map((post, i) => {
-              const date = new Date(post.pubDate).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
-              // Strip HTML from description
+            grid.innerHTML = entries.map((post, i) => {
+              const title = post.title.$t;
+              const date = new Date(post.published.$t).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+              const link = post.link.find(l => l.rel === 'alternate').href;
+              const content = post.content ? post.content.$t : (post.summary ? post.summary.$t : '');
               const tmp = document.createElement('div');
-              tmp.innerHTML = post.description;
+              tmp.innerHTML = content;
               const excerpt = (tmp.textContent || tmp.innerText || '').substring(0, 160).trim() + '...';
               const emoji = emojis[i % emojis.length];
               return `
-                <a class="blog-card" href="${post.link}" target="_blank" rel="noopener">
+                <a class="blog-card" href="${link}" target="_blank" rel="noopener">
                   <div class="blog-card-img">
                     <div class="blog-card-img-placeholder">${emoji}</div>
                   </div>
                   <div class="blog-card-body">
                     <p class="blog-card-meta">${date}</p>
-                    <h3>${post.title}</h3>
+                    <h3>${title}</h3>
                     <p>${excerpt}</p>
                     <span class="blog-card-link">Read More →</span>
                   </div>
@@ -140,9 +141,9 @@
       </script>
     </div>
   </section>
-
+ 
 </div>
-
+ 
 <!-- FOOTER -->
 <div class="footer-contact">
   <div class="container">
@@ -172,7 +173,7 @@
     </div>
   </div>
 </div>
-
+ 
 <div class="footer-profiles">
   <div class="container">
     <p class="fp-label">Find Me Online</p>
@@ -188,7 +189,7 @@
     </div>
   </div>
 </div>
-
+ 
 <div class="footer-bar">
   <div class="footer-bar-inner">
     <div class="footer-bar-top">
@@ -208,7 +209,7 @@
     </div>
   </div>
 </div>
-
+ 
 <script src="main.js"></script>
 </body>
 </html>
