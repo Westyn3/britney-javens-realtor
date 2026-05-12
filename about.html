@@ -5,7 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Britney Javens | North Atlanta Realtor & The Legacy Team</title>
   <meta name="description" content="Meet Britney Javens and Karen Hilliard — The Legacy Team at Keller Williams North Atlanta. A mother-daughter duo serving buyers and sellers across North Georgia." />
+    <!-- Font preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" /></noscript>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    @media (max-width: 900px) {
+      #story-grid { grid-template-columns: 1fr !important; }
+      #story-grid img { aspect-ratio: 4/3 !important; object-position: top center; }
+    }
+  </style>
   <link rel="canonical" href="https://northatlantarealtor.homes/about" />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Britney Javens" />
@@ -57,7 +68,7 @@
  
   <!-- PAGE HERO -->
   <div class="page-hero">
-    <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+    <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;" id="story-grid">
       <div>
         <p class="section-label">Our Story</p>
         <h1>Meet the<br><em style="font-style:italic;color:var(--gold);">Legacy Team</em></h1>
@@ -240,3 +251,4 @@
 <script src="main.js"></script>
 </body>
 </html>
+ 
