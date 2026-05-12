@@ -212,19 +212,17 @@ section { padding: 96px 0; }
 
 /* ── MOBILE FIXES ── */
 @media (max-width: 900px) {
-  /* Hero image overlay — smaller text, doesn't cover image */
-  .hero-image-overlay {
-    bottom: 12px; left: 12px; right: 12px;
-    padding: 10px 14px;
-  }
-  .hero-image-overlay p {
-    font-size: 0.68rem;
-    line-height: 1.4;
-  }
   /* Hero image — give it more height on mobile */
   .hero-image {
     height: 70vw;
     max-height: 380px;
+  }
+  /* Hide overlay on mobile — show caption below instead */
+  .hero-image-overlay {
+    display: none;
+  }
+  .hero-image-caption {
+    display: block !important;
   }
   /* About strip — stack vertically, fix image aspect ratio */
   .about-strip-image img {
