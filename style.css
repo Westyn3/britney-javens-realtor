@@ -226,19 +226,20 @@ section { padding: 96px 0; }
   }
   /* About strip — stack vertically, fix image aspect ratio */
   .about-strip-image img {
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    object-position: top;
+  aspect-ratio: auto;
+  object-fit: contain;
+  width: 100%;
+  height: auto;
   }
   .about-strip-image::before {
     display: none;
   }
   /* Story image on about page */
   .page-hero img {
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    object-position: top;
-    width: 100%;
+  aspect-ratio: auto;
+  object-fit: contain;
+  width: 100%;
+  height: auto;
   }
 }
 @media (max-width: 600px) {
