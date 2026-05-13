@@ -70,7 +70,7 @@ section { padding: 96px 0; }
 .intro-band .container { display: flex; gap: 64px; align-items: center; }
 .intro-stat { text-align: center; flex: 1; }
 .intro-stat .number { font-family: 'Cormorant Garamond', serif; font-size: 3.2rem; font-weight: 300; color: var(--gold); line-height: 1; }
-.intro-stat .label { font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-top: 8px; }
+.intro-stat .label { font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.7); margin-top: 8px; }
 .intro-divider { width: 1px; height: 60px; background: rgba(255,255,255,0.15); }
 
 /* SERVICES */
@@ -183,8 +183,8 @@ section { padding: 96px 0; }
 .footer-nav a { font-family: 'Jost', sans-serif; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #ffffff; text-decoration: none; transition: color 0.2s; }
 .footer-nav a:hover { color: var(--gold); }
 .footer-bar-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; }
-.footer-copy { font-size: 0.75rem; letter-spacing: 0.05em; color: rgba(255,255,255,0.5); }
-.footer-kw { font-size: 0.7rem; color: rgba(255,255,255,0.25); }
+.footer-copy { font-size: 0.75rem; letter-spacing: 0.05em; color: rgba(255,255,255,0.7); }
+.footer-kw { font-size: 0.7rem; color: rgba(255,255,255,0.5); }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
