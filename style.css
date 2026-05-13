@@ -87,7 +87,7 @@ section { padding: 96px 0; }
 .about-strip { background: var(--gold-pale); }
 .about-strip .container { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
 .about-strip-image { position: relative; }
-.about-strip-image img { width: 100%; display: block; aspect-ratio: 4/5; object-fit: cover; }
+.about-strip-image img { width: 100%; display: block; aspect-ratio: auto; object-fit: contain; }
 .about-strip-image::before { content: ''; position: absolute; inset: -12px; border: 1px solid var(--gold); z-index: -1; }
 .about-strip-text .section-intro { max-width: 100%; margin-bottom: 32px; }
 .checklist { list-style: none; margin: 24px 0 36px; }
