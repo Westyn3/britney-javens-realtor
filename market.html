@@ -67,7 +67,9 @@
     .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 28px; }
     .tag { font-family: 'Jost', sans-serif; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 5px 12px; border: 1px solid var(--border); color: var(--mid); background: white; }
 
-    .area-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .area-actions { display: flex; gap: 12px; flex-wrap: wrap; max-width: 620px; }
+    .area-actions .btn-primary, .area-actions .btn-outline { flex: 1 1 0; min-width: 170px; text-align: center; }
+    .area-actions .btn-gold { flex: 1 1 100%; text-align: center; margin-top: 0; }
 
     @media (max-width: 900px) {
       .neighborhood-grid, .neighborhood-grid.reverse { grid-template-columns: 1fr; direction: ltr; gap: 40px; }
@@ -92,13 +94,12 @@
         <a href="roswell.html">Roswell</a>
         <a href="johns-creek.html">Johns Creek</a>
         <a href="cumming.html">Cumming</a>
-        <!-- TODO: add as pages go live:
         <a href="buckhead.html">Buckhead</a>
         <a href="sandy-springs.html">Sandy Springs</a>
         <a href="brookhaven.html">Brookhaven</a>
         <a href="chamblee.html">Chamblee</a>
         <a href="norcross.html">Norcross</a>
-        <a href="duluth.html">Duluth</a> -->
+        <a href="duluth.html">Duluth</a>
       </div>
     </li>
     <li><a href="trusted-vendors.html">Trusted Vendors</a></li>
@@ -119,7 +120,12 @@
     <a href="roswell.html">Roswell</a>
     <a href="johns-creek.html">Johns Creek</a>
     <a href="cumming.html">Cumming</a>
-    <!-- TODO: add remaining city pages as they go live -->
+    <a href="buckhead.html">Buckhead</a>
+    <a href="sandy-springs.html">Sandy Springs</a>
+    <a href="brookhaven.html">Brookhaven</a>
+    <a href="chamblee.html">Chamblee</a>
+    <a href="norcross.html">Norcross</a>
+    <a href="duluth.html">Duluth</a>
   </div>
   <a href="trusted-vendors.html">Trusted Vendors</a>
   <a href="blog.html">Blog</a>
@@ -291,10 +297,9 @@
             <span class="tag">City Living</span>
           </div>
           <div class="area-actions">
-            <!-- TODO: uncomment when pages are live -->
-            <!-- <a href="buckhead.html" class="btn-primary">Explore Buckhead</a> -->
-            <!-- <a href="sandy-springs.html" class="btn-primary">Explore Sandy Springs</a> -->
-            <!-- <a href="brookhaven.html" class="btn-primary">Explore Brookhaven</a> -->
+            <a href="buckhead.html" class="btn-primary">Explore Buckhead</a>
+            <a href="sandy-springs.html" class="btn-primary">Explore Sandy Springs</a>
+            <a href="brookhaven.html" class="btn-primary">Explore Brookhaven</a>
             <!-- TODO: swap for pre-filtered GAMLS search (zip=30305,30327,30342 for Buckhead/Chastain; city=Brookhaven / city=Sandy%20Springs) once agent site is live -->
             <a href="https://www.georgiamls.com/real-estate-agents/JAVENSBRIT" target="_blank" rel="noopener" class="btn-gold" style="margin-top:0;">Search Buckhead &amp; Intown Listings</a>
           </div>
@@ -332,10 +337,9 @@
             <span class="tag">Value</span>
           </div>
           <div class="area-actions">
-            <!-- TODO: uncomment when pages are live -->
-            <!-- <a href="chamblee.html" class="btn-primary">Explore Chamblee</a> -->
-            <!-- <a href="norcross.html" class="btn-primary">Explore Norcross</a> -->
-            <!-- <a href="duluth.html" class="btn-primary">Explore Duluth</a> -->
+            <a href="chamblee.html" class="btn-primary">Explore Chamblee</a>
+            <a href="norcross.html" class="btn-primary">Explore Norcross</a>
+            <a href="duluth.html" class="btn-primary">Explore Duluth</a>
             <!-- TODO: swap for pre-filtered GAMLS search (city=Chamblee / city=Norcross / city=Duluth) once agent site is live -->
             <a href="https://www.georgiamls.com/real-estate-agents/JAVENSBRIT" target="_blank" rel="noopener" class="btn-gold" style="margin-top:0;">Search Chamblee, Norcross &amp; Duluth Listings</a>
           </div>
@@ -406,7 +410,12 @@
     <a href="roswell.html">Roswell</a>
     <a href="johns-creek.html">Johns Creek</a>
     <a href="cumming.html">Cumming</a>
-    <!-- TODO: add remaining city pages as they go live -->
+    <a href="buckhead.html">Buckhead</a>
+    <a href="sandy-springs.html">Sandy Springs</a>
+    <a href="brookhaven.html">Brookhaven</a>
+    <a href="chamblee.html">Chamblee</a>
+    <a href="norcross.html">Norcross</a>
+    <a href="duluth.html">Duluth</a>
   </div>
         <a href="contact.html">Contact</a>
         <a href="trusted-vendors.html">Trusted Vendors</a>
