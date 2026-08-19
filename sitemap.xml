@@ -1,60 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
- 
-  <url>
-    <loc>https://northatlantarealtor.homes/</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
- 
-  <url>
-    <loc>https://northatlantarealtor.homes/about</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
- 
-  <url>
-    <loc>https://northatlantarealtor.homes/market</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
- 
-  <url>
-    <loc>https://northatlantarealtor.homes/buying</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
- 
-  <url>
-    <loc>https://northatlantarealtor.homes/selling</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
- 
-  <url>
-    <loc>https://northatlantarealtor.homes/contact</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
- 
-  <url>
-    <loc>https://northatlantarealtor.homes/trusted-vendors</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
- 
-  <url>
-    <loc>https://northatlantarealtor.homes/blog</loc>
-    <lastmod>2026-07-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
- 
+  <url><loc>https://northatlantarealtor.homes/</loc><priority>1.0</priority></url>
+  <url><loc>https://northatlantarealtor.homes/about.html</loc><priority>0.8</priority></url>
+  <url><loc>https://northatlantarealtor.homes/market.html</loc><priority>0.9</priority></url>
+  <url><loc>https://northatlantarealtor.homes/buying.html</loc><priority>0.8</priority></url>
+  <url><loc>https://northatlantarealtor.homes/selling.html</loc><priority>0.8</priority></url>
+  <url><loc>https://northatlantarealtor.homes/contact.html</loc><priority>0.8</priority></url>
+  <url><loc>https://northatlantarealtor.homes/trusted-vendors.html</loc><priority>0.6</priority></url>
+  <url><loc>https://northatlantarealtor.homes/blog.html</loc><priority>0.6</priority></url>
+  <url><loc>https://northatlantarealtor.homes/alpharetta.html</loc><priority>0.9</priority></url>
+  <url><loc>https://northatlantarealtor.homes/milton.html</loc><priority>0.9</priority></url>
+  <url><loc>https://northatlantarealtor.homes/roswell.html</loc><priority>0.9</priority></url>
+  <url><loc>https://northatlantarealtor.homes/johns-creek.html</loc><priority>0.9</priority></url>
+  <url><loc>https://northatlantarealtor.homes/cumming.html</loc><priority>0.9</priority></url>
+  <url><loc>https://northatlantarealtor.homes/buckhead.html</loc><priority>0.9</priority></url>
+  <url><loc>https://northatlantarealtor.homes/sandy-springs.html</loc><priority>0.9</priority></url>
+  <url><loc>https://northatlantarealtor.homes/brookhaven.html</loc><priority>0.9</priority></url>
+  <url><loc>https://northatlantarealtor.homes/chamblee.html</loc><priority>0.9</priority></url>
+  <url><loc>https://northatlantarealtor.homes/norcross.html</loc><priority>0.9</priority></url>
+  <url><loc>https://northatlantarealtor.homes/duluth.html</loc><priority>0.9</priority></url>
 </urlset>
