@@ -53,8 +53,21 @@
     .contact-form-col h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 300; color: var(--dark); margin-bottom: 28px; line-height: 1.2; }
     .contact-form-col h2 em { font-style: italic; color: var(--gold); }
 
+    .contact-hero { background: var(--cream); border-bottom: 1px solid var(--border); }
+    .contact-hero .container { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 64px; align-items: center; padding-top: 72px; padding-bottom: 72px; }
+    .contact-hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.2rem, 4vw, 4rem); font-weight: 300; color: var(--dark); line-height: 1.1; margin-bottom: 16px; }
+    .contact-hero p.lede { font-size: 1rem; color: var(--mid); max-width: 520px; line-height: 1.8; margin-bottom: 32px; }
+    .quick-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .quick-actions a { flex: 1 1 0; min-width: 150px; text-align: center; }
+    .contact-hero-photo { position: relative; }
+    .contact-hero-photo img { width: 100%; display: block; object-fit: cover; aspect-ratio: 4/5; }
+    .contact-hero-photo::before { content: ''; position: absolute; inset: -12px 12px 12px -12px; border: 1px solid var(--gold); z-index: 0; }
+    .contact-hero-photo img { position: relative; z-index: 1; }
+    .schedule-band { background: var(--charcoal); padding: 64px 0; text-align: center; }
     @media (max-width: 900px) {
       .contact-page-grid { grid-template-columns: 1fr; gap: 48px; padding: 48px 0; }
+      .contact-hero .container { grid-template-columns: 1fr; gap: 40px; padding-top: 48px; padding-bottom: 48px; }
+      .contact-hero-photo { max-width: 380px; margin: 0 auto; }
     }
   </style>
 </head>
@@ -115,17 +128,28 @@
 
 <main class="page">
 
-  <!-- PAGE HERO -->
-  <div class="page-hero">
+  <!-- CONTACT HERO -->
+  <div class="contact-hero">
     <div class="container">
-      <p class="section-label">Get In Touch</p>
-      <h1>Contact <em style="font-style:italic;color:var(--gold);">Britney</em></h1>
-      <p>Whether you're buying, selling, or just exploring your options — I'd love to connect. Schedule a consultation at our Alpharetta office or a local coffee shop of your choice.</p>
+      <div>
+        <p class="section-label">Get In Touch</p>
+        <h1>Contact <em style="font-style:italic;color:var(--gold);">Britney</em></h1>
+        <p class="lede">Whether you're buying, selling, or just exploring your options — I'd love to connect. Schedule a consultation at our Alpharetta office or a local coffee shop of your choice.</p>
+        <div class="quick-actions">
+          <a href="tel:6787808238" class="btn-primary">📞 Call or Text</a>
+          <a href="mailto:Britneyj@kw.com" class="btn-outline">✉️ Email Britney</a>
+          <a href="#book" class="btn-gold" style="margin-top:0;">📅 Book Online</a>
+        </div>
+        <p class="hero-phone" style="margin-top:28px;">Prefer to dial? <a href="tel:+16787808238">(678) 780-8238</a> — calls and texts welcome</p>
+      </div>
+      <div class="contact-hero-photo">
+        <img src="britney2.jpg" alt="Britney Javens — North Atlanta Realtor, Keller Williams" />
+      </div>
     </div>
   </div>
 
   <!-- BOOK A CONSULTATION -->
-  <div style="background:var(--charcoal);padding:80px 0;text-align:center;">
+  <div class="schedule-band" id="book">
     <div class="container">
       <p class="section-label" style="text-align:center;">Schedule Online</p>
       <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:300;color:white;margin-bottom:16px;">Book a <em style="font-style:italic;color:var(--gold);">Free Consultation</em></h2>
@@ -139,7 +163,7 @@
   </div>
 
   <!-- GOOGLE REVIEWS -->
-  <section style="background:var(--cream);padding:80px 0;text-align:center;border-top:1px solid var(--border);">
+  <section style="background:var(--cream);padding:64px 0;text-align:center;border-top:1px solid var(--border);">
     <div class="container">
       <p class="section-label" style="text-align:center;">Client Reviews</p>
       <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);font-weight:300;color:var(--dark);margin-bottom:40px;">What Clients Are<br><em style="font-style:italic;color:var(--gold);">Saying About Britney</em></h2>
@@ -149,6 +173,7 @@
   </section>
 
   <!-- CONTACT GRID -->
+  <div style="background:var(--warm-white);">
   <div class="container">
     <div class="contact-page-grid">
 
@@ -236,6 +261,7 @@
       </div>
 
     </div>
+  </div>
   </div>
 
 </main>
