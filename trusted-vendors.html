@@ -5,21 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trusted Local Vendors in Alpharetta & North Atlanta GA | Britney Javens Realtor</title>
   <meta name="description" content="Britney Javens' personally vetted Alpharetta & North Atlanta vendors — mortgage lenders, roofers, plumbers, electricians, flooring, fencing & more. People we trust with our own homes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" /></noscript>
   <link rel="stylesheet" href="style.css" />
-  <link rel="canonical" href="https://northatlantarealtor.homes/trusted-vendors" />
+  <link rel="canonical" href="https://northatlantarealtor.homes/trusted-vendors.html" />
   <meta name="robots" content="index, follow" />
   <meta name="author" content="Britney Javens" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="North Atlanta Realtor — Britney Javens" />
   <meta property="og:title" content="Trusted Local Vendors in Alpharetta & North Atlanta GA | Britney Javens Realtor" />
   <meta property="og:description" content="Personally vetted Alpharetta & North Atlanta vendors — mortgage lenders, roofers, plumbers, electricians, flooring, fencing & more from Britney Javens at Keller Williams." />
-  <meta property="og:url" content="https://northatlantarealtor.homes/trusted-vendors" />
-  <meta property="og:image" content="https://img1.wsimg.com/isteam/ip/498faf30-b116-4b56-80dd-5439c0ccdd4e/blob.png/:/cr=t:0%25,l:5.11%25,w:89.78%25,h:100%25/rs=w:1200,h:902,cg:true" />
+  <meta property="og:url" content="https://northatlantarealtor.homes/trusted-vendors.html" />
+  <meta property="og:image" content="https://northatlantarealtor.homes/hero-house.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Trusted Local Vendors in Alpharetta & North Atlanta GA | Britney Javens Realtor" />
+  <meta name="twitter:description" content="Personally vetted Alpharetta & North Atlanta vendors — mortgage lenders, roofers, plumbers, electricians, flooring, fencing & more from Britney Javens at Keller Williams." />
+  <meta name="twitter:image" content="https://northatlantarealtor.homes/hero-house.jpg" />
   <meta name="geo.region" content="US-GA" />
   <meta name="geo.placename" content="Alpharetta, Georgia" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
-    {"@type":"WebPage","name":"Trusted Vendors & Local Partners — Britney Javens North Atlanta Realtor","url":"https://northatlantarealtor.homes/trusted-vendors","description":"Personally vetted local professionals recommended by Britney Javens, Realtor® with Keller Williams North Atlanta.","author":{"@type":"Person","name":"Britney Javens","url":"https://northatlantarealtor.homes/"}},
+    {"@type":"WebPage","name":"Trusted Vendors & Local Partners — Britney Javens North Atlanta Realtor","url":"https://northatlantarealtor.homes/trusted-vendors.html","description":"Personally vetted local professionals recommended by Britney Javens, Realtor® with Keller Williams North Atlanta.","author":{"@type":"Person","name":"Britney Javens","url":"https://northatlantarealtor.homes/"}},
     {"@type":"LocalBusiness","name":"Onward Mortgage","url":"https://www.onwardhomemortgage.com/","telephone":"+17702981198","contactPoint":{"@type":"ContactPoint","name":"Thomas Cady"},"address":{"@type":"PostalAddress","addressLocality":"Alpharetta","addressRegion":"GA","addressCountry":"US"}},
     {"@type":"LocalBusiness","name":"Homeowners Financial Group","url":"https://homeownersfg.com/location/atlanta-central/","telephone":"+17708856060","contactPoint":{"@type":"ContactPoint","name":"Matt Quagliana"},"address":{"@type":"PostalAddress","addressLocality":"Alpharetta","addressRegion":"GA","addressCountry":"US"}},
     {"@type":"LocalBusiness","name":"1st Response Roofing","url":"https://www.1stresponseroofco.com/","telephone":"+16786026641","contactPoint":{"@type":"ContactPoint","name":"Cody Hall"},"address":{"@type":"PostalAddress","addressLocality":"Alpharetta","addressRegion":"GA","addressCountry":"US"}},
@@ -32,33 +40,58 @@
   </script>
 </head>
 <body>
- 
+
 <!-- NAV -->
 <nav id="main-nav">
-  <a href="/" class="nav-logo">Britney Javens<span>North Atlanta Realtor</span></a>
+  <a href="index.html" class="nav-logo">Britney Javens<span>North Atlanta Realtor</span></a>
   <ul class="nav-links">
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/market">Market</a></li>
-    <li><a href="/trusted-vendors" class="active">Trusted Vendors</a></li>
-    <li><a href="/blog">Blog</a></li>
-    <li><a href="/contact" class="nav-cta">Contact Me</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="nav-dropdown">
+      <a href="market.html">Markets <span class="caret">▾</span></a>
+      <div class="nav-dropdown-menu">
+        <a href="market.html">All Communities</a>
+        <a href="alpharetta.html">Alpharetta</a>
+        <a href="milton.html">Milton</a>
+        <a href="roswell.html">Roswell</a>
+        <a href="johns-creek.html">Johns Creek</a>
+        <a href="cumming.html">Cumming</a>
+        <!-- TODO: add as pages go live:
+        <a href="buckhead.html">Buckhead</a>
+        <a href="sandy-springs.html">Sandy Springs</a>
+        <a href="brookhaven.html">Brookhaven</a>
+        <a href="chamblee.html">Chamblee</a>
+        <a href="norcross.html">Norcross</a>
+        <a href="duluth.html">Duluth</a> -->
+      </div>
+    </li>
+    <li><a href="trusted-vendors.html" class="active">Trusted Vendors</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact Me</a></li>
   </ul>
   <button class="nav-hamburger" id="hamburger" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-  <a href="/">Home</a>
-  <a href="/about">About</a>
-  <a href="/market">Market</a>
-  <a href="/trusted-vendors">Trusted Vendors</a>
-  <a href="/blog">Blog</a>
-  <a href="/contact">Contact Me</a>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="market.html">Markets</a>
+  <div class="mobile-submenu">
+    <a href="alpharetta.html">Alpharetta</a>
+    <a href="milton.html">Milton</a>
+    <a href="roswell.html">Roswell</a>
+    <a href="johns-creek.html">Johns Creek</a>
+    <a href="cumming.html">Cumming</a>
+    <!-- TODO: add remaining city pages as they go live -->
+  </div>
+  <a href="trusted-vendors.html">Trusted Vendors</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact Me</a>
 </div>
- 
+
 <main class="page">
- 
+
   <!-- PAGE HERO -->
   <div class="page-hero" style="text-align:center;">
     <div class="container">
@@ -67,12 +100,11 @@
       <p style="max-width:600px;margin:16px auto 0;">Whether you're buying, selling, or settling into your new home, having the right people in your corner makes all the difference. These are professionals we personally recommend — people we trust with our own homes.</p>
     </div>
   </div>
- 
+
   <!-- VENDORS -->
   <section style="background:var(--warm-white);padding:80px 0;">
     <div class="container">
- 
-      <!-- MORTGAGE -->
+
       <div class="vendor-category">
         <h2 class="vendor-category-title" style="justify-content:center;"><span class="cat-icon">🏦</span> Mortgage & Lending</h2>
         <div class="vendor-cards" style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;">
@@ -92,8 +124,7 @@
           </div>
         </div>
       </div>
- 
-      <!-- ROOFING -->
+
       <div class="vendor-category">
         <h2 class="vendor-category-title" style="justify-content:center;"><span class="cat-icon">🏠</span> Roofing</h2>
         <div class="vendor-cards" style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;">
@@ -106,8 +137,7 @@
           </div>
         </div>
       </div>
- 
-      <!-- ELECTRICAL -->
+
       <div class="vendor-category">
         <h2 class="vendor-category-title" style="justify-content:center;"><span class="cat-icon">⚡</span> Electrical</h2>
         <div class="vendor-cards" style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;">
@@ -118,8 +148,7 @@
           </div>
         </div>
       </div>
- 
-      <!-- PLUMBING -->
+
       <div class="vendor-category">
         <h2 class="vendor-category-title" style="justify-content:center;"><span class="cat-icon">🔧</span> Plumbing</h2>
         <div class="vendor-cards" style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;">
@@ -132,8 +161,7 @@
           </div>
         </div>
       </div>
- 
-      <!-- HANDYMAN -->
+
       <div class="vendor-category">
         <h2 class="vendor-category-title" style="justify-content:center;"><span class="cat-icon">🛠️</span> Handyman & General Contracting</h2>
         <div class="vendor-cards" style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;">
@@ -144,8 +172,7 @@
           </div>
         </div>
       </div>
- 
-      <!-- LAND & SEPTIC -->
+
       <div class="vendor-category">
         <h2 class="vendor-category-title" style="justify-content:center;"><span class="cat-icon">🌿</span> Land, Septic & Grading</h2>
         <div class="vendor-cards" style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;">
@@ -158,8 +185,7 @@
           </div>
         </div>
       </div>
- 
-      <!-- FENCING -->
+
       <div class="vendor-category">
         <h2 class="vendor-category-title" style="justify-content:center;"><span class="cat-icon">🏡</span> Fencing</h2>
         <div class="vendor-cards" style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;">
@@ -172,8 +198,7 @@
           </div>
         </div>
       </div>
- 
-      <!-- FLOORING -->
+
       <div class="vendor-category">
         <h2 class="vendor-category-title" style="justify-content:center;"><span class="cat-icon">🪵</span> Flooring</h2>
         <div class="vendor-cards" style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;">
@@ -185,8 +210,7 @@
           </div>
         </div>
       </div>
- 
-      <!-- TREE SERVICES -->
+
       <div class="vendor-category">
         <h2 class="vendor-category-title" style="justify-content:center;"><span class="cat-icon">🌳</span> Tree Services</h2>
         <div class="vendor-cards" style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;">
@@ -199,19 +223,18 @@
           </div>
         </div>
       </div>
- 
+
       <!-- DISCLAIMER -->
       <div class="vendor-disclaimer">
         <strong>A note from Britney:</strong> We personally vet every vendor on this page. While we believe in each of these professionals wholeheartedly, we encourage you to do your own due diligence and get multiple quotes when appropriate. Our goal is simply to connect you with people we trust — because your home deserves nothing less.
-        <br><br>Have a vendor you'd like to recommend? <a href="/contact" style="color:var(--gold);">Contact us!</a>
+        <br><br>Have a vendor you'd like to recommend? <a href="contact.html" style="color:var(--gold);">Contact us!</a>
       </div>
- 
+
     </div>
   </section>
- 
+
 </main>
- 
-<!-- FOOTER -->
+
 <div class="footer-contact">
   <div class="container">
     <div class="contact-info-col">
@@ -240,7 +263,6 @@
     </div>
   </div>
 </div>
- 
 <div class="footer-profiles">
   <div class="container">
     <p class="fp-label">Find Me Online</p>
@@ -256,18 +278,17 @@
     </div>
   </div>
 </div>
- 
 <div class="footer-bar">
   <div class="footer-bar-inner">
     <div class="footer-bar-top">
       <div class="footer-logo">Britney Javens<span>North Atlanta Realtor</span></div>
       <div class="footer-nav">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/market">Market</a>
-        <a href="/contact">Contact</a>
-        <a href="/trusted-vendors">Trusted Vendors</a>
-        <a href="/blog">Blog</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="market.html">Markets</a>
+        <a href="contact.html">Contact</a>
+        <a href="trusted-vendors.html">Trusted Vendors</a>
+        <a href="blog.html">Blog</a>
       </div>
     </div>
     <div class="footer-bar-bottom">
@@ -276,7 +297,7 @@
     </div>
   </div>
 </div>
- 
+
 <script src="main.js"></script>
 </body>
 </html>
