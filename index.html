@@ -27,11 +27,64 @@
   <meta name="geo.placename" content="Alpharetta, Georgia" />
   <meta name="geo.position" content="34.0754;-84.2941" />
   <meta name="ICBM" content="34.0754, -84.2941" />
-  <!-- Preload hero image -->
+  <!-- Preload hero poster image (shows while video loads) -->
   <link rel="preload" as="image" href="hero-house.jpg" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[{"@type":"RealEstateAgent","name":"Britney Javens – North Atlanta Realtor","url":"https://northatlantarealtor.homes/","telephone":"+16787808238","email":"Britneyj@kw.com","description":"Britney Javens is a licensed Realtor® with Keller Williams North Atlanta and part of The Legacy Team.","image":"https://northatlantarealtor.homes/britney2.jpg","priceRange":"$$$","address":{"@type":"PostalAddress","streetAddress":"925 North Point Parkway","addressLocality":"Alpharetta","addressRegion":"GA","postalCode":"30022","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":34.0754,"longitude":-84.2941},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"12:30","closes":"19:30"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"91","bestRating":"5","worstRating":"1"},"review":{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Person","name":"North Atlanta Client"},"reviewBody":"Britney's kindness, responsiveness, and unwavering commitment made every step of our home search smooth and completely stress-free."},"areaServed":["Alpharetta, GA","Milton, GA","Roswell, GA","Johns Creek, GA","Cumming, GA","Sandy Springs, GA","Buckhead, Atlanta, GA","Brookhaven, GA","Chastain Park, Atlanta, GA","Chamblee, GA","Norcross, GA","Duluth, GA"],"sameAs":["https://northatlantarealtor.homes/","https://britneyj.kw.com/","https://www.buywithbritney.realtor/","https://www.realtor.com/realestateagents/631116af437786b96006a407","https://www.zillow.com/profile/Britneysellsatl","https://www.georgiamls.com/real-estate-agents/JAVENSBRIT","https://www.instagram.com/britneysellsatl/","https://www.facebook.com/britneysellsatl/","https://www.linkedin.com/in/britneysellsatl/","https://www.youtube.com/@britneysellsatl","https://legacyteam.kw.com/"]},{"@type":"Person","name":"Britney Javens","jobTitle":"Licensed Real Estate Agent","url":"https://northatlantarealtor.homes/","telephone":"+16787808238","email":"Britneyj@kw.com","colleague":{"@type":"Person","name":"Karen Hilliard","url":"https://northgaluxuryrealtor.com/about"},"worksFor":{"@type":"Organization","name":"Keller Williams North Atlanta"}}]}
   </script>
+
+  <!-- VIDEO HERO STYLES -->
+  <style>
+    .video-hero {
+      position: relative;
+      min-height: calc(100vh - var(--nav-h));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 72px 24px;
+      background: var(--charcoal); /* shows while video loads */
+    }
+    /* Video fills the whole section, cropping like background-cover */
+    .video-hero-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+    /* Soft cream panel behind the wording, centered */
+    .video-hero-panel {
+      position: relative;
+      z-index: 1;
+      background: rgba(253, 250, 246, 0.9);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      padding: 56px 52px;
+      max-width: 700px;
+      width: 100%;
+      text-align: center;
+      border: 1px solid rgba(184, 150, 62, 0.25); /* faint gold edge */
+    }
+    .video-hero .hero-subtitle { margin-left: auto; margin-right: auto; }
+    .video-hero .hero-actions { justify-content: center; }
+    .video-hero .hero-phone { margin-top: 28px; }
+    .video-hero .btn-gold { margin-top: 20px; }
+    /* Accessibility: reduced motion gets the photo instead */
+    @media (prefers-reduced-motion: reduce) {
+      .video-hero-bg { display: none; }
+      .video-hero { background: url('hero-house.jpg') center / cover no-repeat; }
+    }
+    /* Mobile sizing */
+    @media (max-width: 600px) {
+      .video-hero {
+        min-height: calc(100svh - var(--nav-h)); /* svh = stable on mobile browsers */
+        padding: 48px 16px;
+      }
+      .video-hero-panel { padding: 40px 24px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -90,9 +143,13 @@
 
 <main class="page">
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-text">
+  <!-- VIDEO HERO -->
+  <section class="video-hero">
+    <video class="video-hero-bg" autoplay muted loop playsinline poster="hero-house.jpg">
+      <source src="hero.mp4" type="video/mp4" />
+    </video>
+
+    <div class="video-hero-panel">
       <p class="hero-eyebrow">North Atlanta Real Estate</p>
       <h1 class="hero-title">Your Home.<br>Your <em>Legacy.</em><br>Your Realtor.</h1>
       <p class="hero-subtitle">Luxury estates in Milton, walkable Buckhead and Brookhaven addresses, top-school suburbs, and new construction — Britney Javens is North Atlanta's trusted Realtor® for buyers and sellers across Alpharetta, Roswell, Johns Creek, Cumming, and beyond.</p>
@@ -100,20 +157,9 @@
         <a href="contact.html" class="btn-primary">Let's Connect</a>
         <a href="about.html" class="btn-outline">Meet Britney</a>
       </div>
-      <p class="hero-phone">Call or text: <a href="tel:+16787808238">(678) 780-8238</a></p>
       <a href="https://www.georgiamls.com/real-estate-agents/JAVENSBRIT" target="_blank" rel="noopener" class="btn-gold">Explore Listings Now</a>
+      <p class="hero-phone">Call or text: <a href="tel:+16787808238">(678) 780-8238</a></p>
     </div>
-    <div class="hero-image">
-      <img src="hero-house.jpg" alt="Luxury North Atlanta Home — Britney Javens Realtor" />
-      <div class="hero-image-overlay">
-        <p><strong>Britney Javens</strong> — Keller Williams North Atlanta<br>Buckhead · Brookhaven · Sandy Springs · Roswell · Alpharetta · Milton · Johns Creek · Cumming</p>
-      </div>
-    </div>
-    <!-- Mobile caption shown below image -->
-    <p class="hero-image-caption" style="display:none;font-size:0.75rem;color:var(--mid);padding:10px 16px;background:var(--cream);text-align:center;letter-spacing:0.03em;border-top:1px solid var(--border);">
-      <strong style="color:var(--charcoal);">Britney Javens</strong> — Keller Williams North Atlanta<br>
-      Buckhead · Sandy Springs · Roswell · Alpharetta · Milton · Cumming
-    </p>
   </section>
 
   <!-- STATS -->
