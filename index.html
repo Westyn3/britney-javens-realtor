@@ -76,13 +76,31 @@
       .video-hero-bg { display: none; }
       .video-hero { background: url('hero-house.jpg') center / cover no-repeat; }
     }
-    /* Mobile sizing */
+    /* Short subtitle is mobile-only */
+    .hero-subtitle-short { display: none; }
+    /* Mobile sizing — compact panel so the video stays visible around it */
     @media (max-width: 600px) {
       .video-hero {
         min-height: calc(100svh - var(--nav-h)); /* svh = stable on mobile browsers */
-        padding: 48px 16px;
+        padding: 40px 24px;
       }
-      .video-hero-panel { padding: 40px 24px; }
+      .video-hero-panel {
+        padding: 30px 22px;
+        max-width: 340px;
+        background: rgba(253, 250, 246, 0.87);
+      }
+      /* Swap the long paragraph for one short line */
+      .video-hero .hero-subtitle-full { display: none; }
+      .video-hero .hero-subtitle-short { display: block; font-size: 0.92rem; line-height: 1.6; margin-bottom: 24px; }
+      /* Tighter type */
+      .video-hero .hero-eyebrow { font-size: 0.62rem; margin-bottom: 12px; }
+      .video-hero .hero-title { font-size: 2.1rem; margin-bottom: 16px; }
+      /* Compact buttons */
+      .video-hero .hero-actions { gap: 10px; }
+      .video-hero .hero-actions .btn-primary,
+      .video-hero .hero-actions .btn-outline { padding: 13px 18px; }
+      .video-hero .btn-gold { margin-top: 12px; padding: 13px 18px; }
+      .video-hero .hero-phone { margin-top: 18px; font-size: 0.75rem; }
     }
   </style>
 </head>
@@ -152,7 +170,8 @@
     <div class="video-hero-panel">
       <p class="hero-eyebrow">North Atlanta Real Estate</p>
       <h1 class="hero-title">Your Home.<br>Your <em>Legacy.</em><br>Your Realtor.</h1>
-      <p class="hero-subtitle">Luxury estates in Milton, walkable Buckhead and Brookhaven addresses, top-school suburbs, and new construction — Britney Javens is North Atlanta's trusted Realtor® for buyers and sellers across Alpharetta, Roswell, Johns Creek, Cumming, and beyond.</p>
+      <p class="hero-subtitle hero-subtitle-full">Luxury estates in Milton, walkable Buckhead and Brookhaven addresses, top-school suburbs, and new construction — Britney Javens is North Atlanta's trusted Realtor® for buyers and sellers across Alpharetta, Roswell, Johns Creek, Cumming, and beyond.</p>
+      <p class="hero-subtitle hero-subtitle-short">North Atlanta's trusted Realtor® — Buckhead to Cumming, and everywhere between.</p>
       <div class="hero-actions">
         <a href="contact.html" class="btn-primary">Let's Connect</a>
         <a href="about.html" class="btn-outline">Meet Britney</a>
