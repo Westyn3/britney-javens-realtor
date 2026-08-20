@@ -341,3 +341,97 @@ section { padding: 96px 0; }
 .mobile-submenu { display: flex; flex-direction: column; gap: 14px; padding: 4px 0 4px 18px; border-left: 1px solid var(--border); margin-left: 4px; }
 .mobile-submenu a { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; color: var(--mid); }
 .mobile-submenu a:hover { color: var(--gold); }
+
+/* ══════════════════════════════════════════
+   MOBILE POLISH — append to END of style.css
+   ══════════════════════════════════════════ */
+
+/* Kill sideways scroll from decorative gold frames (::before offsets) */
+html, body { overflow-x: hidden; }
+img { max-width: 100%; }
+
+@media (max-width: 900px) {
+
+  /* ── Footer: match page gutters, center everything ── */
+  .footer-bar-inner { padding: 0 24px; }
+  .footer-bar-top { align-items: center; text-align: center; }
+  .footer-logo { text-align: center; }
+  .footer-nav { justify-content: center; row-gap: 14px; }
+
+  /* ── Mobile menu: scrollable + bigger tap targets ── */
+  .mobile-menu {
+    max-height: calc(100vh - var(--nav-h));
+    overflow-y: auto;
+    gap: 0;
+    padding: 8px 24px 32px;
+  }
+  .mobile-menu > a {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .mobile-menu > a:last-of-type { border-bottom: none; }
+
+  /* City submenu: indented, smaller, clearly grouped under Markets */
+  .mobile-menu .mobile-submenu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 6px;
+    padding: 12px 0 14px 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .mobile-menu .mobile-submenu a {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: var(--mid);
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    background: var(--cream);
+  }
+
+  /* ── Section rhythm: desktop 96px feels cavernous on a phone ── */
+  section { padding: 72px 0; }
+}
+
+@media (max-width: 600px) {
+
+  section { padding: 56px 0; }
+
+  /* ── Hero: tighter type, comfortable measure ── */
+  .hero-title { font-size: clamp(2.2rem, 9vw, 2.8rem); margin-bottom: 20px; }
+  .hero-subtitle { font-size: 0.95rem; margin-bottom: 32px; }
+  .hero-text { padding: 44px 24px 40px; }
+  .hero-phone { margin-top: 28px; }
+
+  /* ── CTAs: full-width & stacked instead of skinny side-by-side ── */
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn-primary,
+  .hero-actions .btn-outline,
+  .area-actions .btn-primary,
+  .area-actions .btn-outline {
+    width: 100%;
+    text-align: center;
+    padding: 16px 20px; /* comfier tap target */
+  }
+
+  /* ── Stats band: 2×2 grid instead of a squeezed row ── */
+  .intro-band { padding: 44px 0; }
+  .intro-band .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 16px;
+  }
+  .intro-stat .number { font-size: 2.4rem; }
+  .intro-stat .label { font-size: 0.65rem; }
+
+  /* ── Section headings scale down a touch ── */
+  .section-title { font-size: clamp(1.8rem, 7.5vw, 2.4rem); }
+
+  /* ── Contact photo frame: keep the gold border inside the viewport ── */
+  .contact-hero-photo::before { inset: 12px -12px -12px 12px; }
+}
+
+@media (max-width: 420px) {
+  /* Very small phones: tighten gutters slightly */
+  .container, .footer-bar-inner { padding: 0 20px; }
+  .hero-text { padding-left: 20px; padding-right: 20px; }
+}
