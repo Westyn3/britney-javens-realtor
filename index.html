@@ -78,29 +78,47 @@
     }
     /* Short subtitle is mobile-only */
     .hero-subtitle-short { display: none; }
-    /* Mobile sizing — compact panel so the video stays visible around it */
+    /* Mobile sizing — small card so the video is clearly visible around it */
     @media (max-width: 600px) {
       .video-hero {
         min-height: calc(100svh - var(--nav-h)); /* svh = stable on mobile browsers */
-        padding: 40px 24px;
+        padding: 40px 32px;
       }
       .video-hero-panel {
-        padding: 30px 22px;
-        max-width: 340px;
-        background: rgba(253, 250, 246, 0.87);
+        padding: 24px 18px;
+        max-width: 300px;
+        background: rgba(253, 250, 246, 0.85);
       }
       /* Swap the long paragraph for one short line */
       .video-hero .hero-subtitle-full { display: none; }
-      .video-hero .hero-subtitle-short { display: block; font-size: 0.92rem; line-height: 1.6; margin-bottom: 24px; }
+      .video-hero .hero-subtitle-short { display: block; font-size: 0.83rem; line-height: 1.55; margin-bottom: 18px; }
       /* Tighter type */
-      .video-hero .hero-eyebrow { font-size: 0.62rem; margin-bottom: 12px; }
-      .video-hero .hero-title { font-size: 2.1rem; margin-bottom: 16px; }
+      .video-hero .hero-eyebrow { font-size: 0.56rem; margin-bottom: 10px; }
+      .video-hero .hero-title { font-size: 1.7rem; margin-bottom: 12px; }
       /* Compact buttons */
-      .video-hero .hero-actions { gap: 10px; }
+      .video-hero .hero-actions { gap: 8px; }
       .video-hero .hero-actions .btn-primary,
-      .video-hero .hero-actions .btn-outline { padding: 13px 18px; }
-      .video-hero .btn-gold { margin-top: 12px; padding: 13px 18px; }
-      .video-hero .hero-phone { margin-top: 18px; font-size: 0.75rem; }
+      .video-hero .hero-actions .btn-outline { padding: 11px 14px; font-size: 0.7rem; }
+      .video-hero .btn-gold { margin-top: 10px; padding: 11px 14px; font-size: 0.7rem; }
+      .video-hero .hero-phone { margin-top: 14px; font-size: 0.68rem; }
+    }
+    /* ── Hero entrance animation ── */
+    @media (prefers-reduced-motion: no-preference) {
+      @keyframes heroRise {
+        from { opacity: 0; transform: translateY(20px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+      .video-hero-panel { animation: heroRise 0.9s cubic-bezier(.22,.61,.36,1) 0.1s both; }
+      .video-hero .hero-eyebrow { animation: heroRise 0.7s cubic-bezier(.22,.61,.36,1) 0.4s both; }
+      .ht-line { display: inline-block; animation: heroRise 0.8s cubic-bezier(.22,.61,.36,1) both; }
+      .video-hero .ht-line:nth-of-type(1) { animation-delay: 0.55s; }
+      .video-hero .ht-line:nth-of-type(2) { animation-delay: 0.72s; }
+      .video-hero .ht-line:nth-of-type(3) { animation-delay: 0.89s; }
+      .video-hero .hero-subtitle-full,
+      .video-hero .hero-subtitle-short { animation: heroRise 0.8s cubic-bezier(.22,.61,.36,1) 1.05s both; }
+      .video-hero .hero-actions { animation: heroRise 0.8s cubic-bezier(.22,.61,.36,1) 1.18s both; }
+      .video-hero .btn-gold { animation: heroRise 0.8s cubic-bezier(.22,.61,.36,1) 1.28s both; }
+      .video-hero .hero-phone { animation: heroRise 0.8s cubic-bezier(.22,.61,.36,1) 1.38s both; }
     }
   </style>
 </head>
@@ -169,7 +187,7 @@
 
     <div class="video-hero-panel">
       <p class="hero-eyebrow">North Atlanta Real Estate</p>
-      <h1 class="hero-title">Your Home.<br>Your <em>Legacy.</em><br>Your Realtor.</h1>
+      <h1 class="hero-title"><span class="ht-line">Your Home.</span><br><span class="ht-line">Your <em>Legacy.</em></span><br><span class="ht-line">Your Realtor.</span></h1>
       <p class="hero-subtitle hero-subtitle-full">Luxury estates in Milton, walkable Buckhead and Brookhaven addresses, top-school suburbs, and new construction — Britney Javens is North Atlanta's trusted Realtor® for buyers and sellers across Alpharetta, Roswell, Johns Creek, Cumming, and beyond.</p>
       <p class="hero-subtitle hero-subtitle-short">North Atlanta's trusted Realtor® — Buckhead to Cumming, and everywhere between.</p>
       <div class="hero-actions">
