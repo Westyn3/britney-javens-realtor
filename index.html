@@ -27,8 +27,8 @@
   <meta name="geo.placename" content="Alpharetta, Georgia" />
   <meta name="geo.position" content="34.0754;-84.2941" />
   <meta name="ICBM" content="34.0754, -84.2941" />
-  <!-- Preload hero poster image (shows while video loads) -->
-  <link rel="preload" as="image" href="hero-house.jpg" />
+  <!-- Preload hero poster image (first frame of the video) -->
+  <link rel="preload" as="image" href="hero-poster.jpg" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[{"@type":"RealEstateAgent","name":"Britney Javens – North Atlanta Realtor","url":"https://northatlantarealtor.homes/","telephone":"+16787808238","email":"Britneyj@kw.com","description":"Britney Javens is a licensed Realtor® with Keller Williams North Atlanta and part of The Legacy Team.","image":"https://northatlantarealtor.homes/britney2.jpg","priceRange":"$$$","address":{"@type":"PostalAddress","streetAddress":"925 North Point Parkway","addressLocality":"Alpharetta","addressRegion":"GA","postalCode":"30022","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":34.0754,"longitude":-84.2941},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"12:30","closes":"19:30"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"91","bestRating":"5","worstRating":"1"},"review":{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Person","name":"North Atlanta Client"},"reviewBody":"Britney's kindness, responsiveness, and unwavering commitment made every step of our home search smooth and completely stress-free."},"areaServed":["Alpharetta, GA","Milton, GA","Roswell, GA","Johns Creek, GA","Cumming, GA","Sandy Springs, GA","Buckhead, Atlanta, GA","Brookhaven, GA","Chastain Park, Atlanta, GA","Chamblee, GA","Norcross, GA","Duluth, GA"],"sameAs":["https://northatlantarealtor.homes/","https://britneyj.kw.com/","https://www.buywithbritney.realtor/","https://www.realtor.com/realestateagents/631116af437786b96006a407","https://www.zillow.com/profile/Britneysellsatl","https://www.georgiamls.com/real-estate-agents/JAVENSBRIT","https://www.instagram.com/britneysellsatl/","https://www.facebook.com/britneysellsatl/","https://www.linkedin.com/in/britneysellsatl/","https://www.youtube.com/@britneysellsatl","https://legacyteam.kw.com/"]},{"@type":"Person","name":"Britney Javens","jobTitle":"Licensed Real Estate Agent","url":"https://northatlantarealtor.homes/","telephone":"+16787808238","email":"Britneyj@kw.com","colleague":{"@type":"Person","name":"Karen Hilliard","url":"https://northgaluxuryrealtor.com/about"},"worksFor":{"@type":"Organization","name":"Keller Williams North Atlanta"}}]}
   </script>
@@ -74,7 +74,7 @@
     /* Accessibility: reduced motion gets the photo instead */
     @media (prefers-reduced-motion: reduce) {
       .video-hero-bg { display: none; }
-      .video-hero { background: url('hero-house.jpg') center / cover no-repeat; }
+      .video-hero { background: url('hero-poster.jpg') center / cover no-repeat; }
     }
     /* Short subtitle is mobile-only */
     .hero-subtitle-short { display: none; }
@@ -181,7 +181,7 @@
 
   <!-- VIDEO HERO -->
   <section class="video-hero">
-    <video class="video-hero-bg" autoplay muted loop playsinline poster="hero-house.jpg">
+    <video class="video-hero-bg" autoplay muted loop playsinline preload="auto" poster="hero-poster.jpg">
       <source src="hero.mp4" type="video/mp4" />
     </video>
 
