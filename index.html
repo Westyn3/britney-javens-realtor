@@ -27,8 +27,8 @@
   <meta name="geo.placename" content="Alpharetta, Georgia" />
   <meta name="geo.position" content="34.0754;-84.2941" />
   <meta name="ICBM" content="34.0754, -84.2941" />
-  <!-- Preload hero poster image (first frame of the video) -->
-  <link rel="preload" as="image" href="hero-poster.jpg" />
+  <!-- Preload hero poster image (shows while video loads) -->
+  <link rel="preload" as="image" href="hero-house.jpg" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[{"@type":"RealEstateAgent","name":"Britney Javens – North Atlanta Realtor","url":"https://northatlantarealtor.homes/","telephone":"+16787808238","email":"Britneyj@kw.com","description":"Britney Javens is a licensed Realtor® with Keller Williams North Atlanta and part of The Legacy Team.","image":"https://northatlantarealtor.homes/britney2.jpg","priceRange":"$$$","address":{"@type":"PostalAddress","streetAddress":"925 North Point Parkway","addressLocality":"Alpharetta","addressRegion":"GA","postalCode":"30022","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":34.0754,"longitude":-84.2941},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"12:30","closes":"19:30"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"91","bestRating":"5","worstRating":"1"},"review":{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Person","name":"North Atlanta Client"},"reviewBody":"Britney's kindness, responsiveness, and unwavering commitment made every step of our home search smooth and completely stress-free."},"areaServed":["Alpharetta, GA","Milton, GA","Roswell, GA","Johns Creek, GA","Cumming, GA","Sandy Springs, GA","Buckhead, Atlanta, GA","Brookhaven, GA","Chastain Park, Atlanta, GA","Chamblee, GA","Norcross, GA","Duluth, GA"],"sameAs":["https://northatlantarealtor.homes/","https://britneyj.kw.com/","https://www.buywithbritney.realtor/","https://www.realtor.com/realestateagents/631116af437786b96006a407","https://www.zillow.com/profile/Britneysellsatl","https://www.georgiamls.com/real-estate-agents/JAVENSBRIT","https://www.instagram.com/britneysellsatl/","https://www.facebook.com/britneysellsatl/","https://www.linkedin.com/in/britneysellsatl/","https://www.youtube.com/@britneysellsatl","https://legacyteam.kw.com/"]},{"@type":"Person","name":"Britney Javens","jobTitle":"Licensed Real Estate Agent","url":"https://northatlantarealtor.homes/","telephone":"+16787808238","email":"Britneyj@kw.com","colleague":{"@type":"Person","name":"Karen Hilliard","url":"https://northgaluxuryrealtor.com/about"},"worksFor":{"@type":"Organization","name":"Keller Williams North Atlanta"}}]}
   </script>
@@ -74,51 +74,15 @@
     /* Accessibility: reduced motion gets the photo instead */
     @media (prefers-reduced-motion: reduce) {
       .video-hero-bg { display: none; }
-      .video-hero { background: url('hero-poster.jpg') center / cover no-repeat; }
+      .video-hero { background: url('hero-house.jpg') center / cover no-repeat; }
     }
-    /* Short subtitle is mobile-only */
-    .hero-subtitle-short { display: none; }
-    /* Mobile sizing — small card so the video is clearly visible around it */
+    /* Mobile sizing */
     @media (max-width: 600px) {
       .video-hero {
         min-height: calc(100svh - var(--nav-h)); /* svh = stable on mobile browsers */
-        padding: 40px 32px;
+        padding: 48px 16px;
       }
-      .video-hero-panel {
-        padding: 24px 18px;
-        max-width: 300px;
-        background: rgba(253, 250, 246, 0.85);
-      }
-      /* Swap the long paragraph for one short line */
-      .video-hero .hero-subtitle-full { display: none; }
-      .video-hero .hero-subtitle-short { display: block; font-size: 0.83rem; line-height: 1.55; margin-bottom: 18px; }
-      /* Tighter type */
-      .video-hero .hero-eyebrow { font-size: 0.56rem; margin-bottom: 10px; }
-      .video-hero .hero-title { font-size: 1.7rem; margin-bottom: 12px; }
-      /* Compact buttons */
-      .video-hero .hero-actions { gap: 8px; }
-      .video-hero .hero-actions .btn-primary,
-      .video-hero .hero-actions .btn-outline { padding: 11px 14px; font-size: 0.7rem; }
-      .video-hero .btn-gold { margin-top: 10px; padding: 11px 14px; font-size: 0.7rem; }
-      .video-hero .hero-phone { margin-top: 14px; font-size: 0.68rem; }
-    }
-    /* ── Hero entrance animation ── */
-    @media (prefers-reduced-motion: no-preference) {
-      @keyframes heroRise {
-        from { opacity: 0; transform: translateY(20px); }
-        to   { opacity: 1; transform: translateY(0); }
-      }
-      .video-hero-panel { animation: heroRise 0.9s cubic-bezier(.22,.61,.36,1) 0.1s both; }
-      .video-hero .hero-eyebrow { animation: heroRise 0.7s cubic-bezier(.22,.61,.36,1) 0.4s both; }
-      .ht-line { display: inline-block; animation: heroRise 0.8s cubic-bezier(.22,.61,.36,1) both; }
-      .video-hero .ht-line:nth-of-type(1) { animation-delay: 0.55s; }
-      .video-hero .ht-line:nth-of-type(2) { animation-delay: 0.72s; }
-      .video-hero .ht-line:nth-of-type(3) { animation-delay: 0.89s; }
-      .video-hero .hero-subtitle-full,
-      .video-hero .hero-subtitle-short { animation: heroRise 0.8s cubic-bezier(.22,.61,.36,1) 1.05s both; }
-      .video-hero .hero-actions { animation: heroRise 0.8s cubic-bezier(.22,.61,.36,1) 1.18s both; }
-      .video-hero .btn-gold { animation: heroRise 0.8s cubic-bezier(.22,.61,.36,1) 1.28s both; }
-      .video-hero .hero-phone { animation: heroRise 0.8s cubic-bezier(.22,.61,.36,1) 1.38s both; }
+      .video-hero-panel { padding: 40px 24px; }
     }
   </style>
 </head>
@@ -181,20 +145,19 @@
 
   <!-- VIDEO HERO -->
   <section class="video-hero">
-    <video class="video-hero-bg" autoplay muted loop playsinline preload="auto" poster="hero-poster.jpg">
+    <video class="video-hero-bg" autoplay muted loop playsinline poster="hero-house.jpg">
       <source src="hero.mp4" type="video/mp4" />
     </video>
 
     <div class="video-hero-panel">
       <p class="hero-eyebrow">North Atlanta Real Estate</p>
-      <h1 class="hero-title"><span class="ht-line">Your Home.</span><br><span class="ht-line">Your <em>Legacy.</em></span><br><span class="ht-line">Your Realtor.</span></h1>
-      <p class="hero-subtitle hero-subtitle-full">Luxury estates in Milton, walkable Buckhead and Brookhaven addresses, top-school suburbs, and new construction — Britney Javens is North Atlanta's trusted Realtor® for buyers and sellers across Alpharetta, Roswell, Johns Creek, Cumming, and beyond.</p>
-      <p class="hero-subtitle hero-subtitle-short">North Atlanta's trusted Realtor® — Buckhead to Cumming, and everywhere between.</p>
+      <h1 class="hero-title">Your Home.<br>Your <em>Legacy.</em><br>Your Realtor.</h1>
+      <p class="hero-subtitle">Luxury estates in Milton, walkable Buckhead and Brookhaven addresses, top-school suburbs, and new construction — Britney Javens is North Atlanta's trusted Realtor® for buyers and sellers across Alpharetta, Roswell, Johns Creek, Cumming, and beyond.</p>
       <div class="hero-actions">
         <a href="contact.html" class="btn-primary">Let's Connect</a>
         <a href="about.html" class="btn-outline">Meet Britney</a>
       </div>
-      <a href="https://www.georgiamls.com/real-estate-agents/JAVENSBRIT" target="_blank" rel="noopener" class="btn-gold">Explore Listings Now</a>
+      <a href="https://javensbrit.georgiamls.com/idxsearch/" target="_blank" rel="noopener" class="btn-gold">Explore Listings Now</a>
       <p class="hero-phone">Call or text: <a href="tel:+16787808238">(678) 780-8238</a></p>
     </div>
   </section>
