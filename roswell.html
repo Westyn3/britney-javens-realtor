@@ -158,6 +158,35 @@
     </div>
   </section>
 
+  <!-- RECENTLY SOLD -->
+  <section class="recently-sold" style="background:var(--gold-pale);">
+    <style>
+      .recently-sold .sold-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 28px; margin-top: 48px; max-width: 820px; }
+      .sold-card { position: relative; background: white; border: 1px solid rgba(184,150,62,0.25); padding: 10px; margin: 0; }
+      .sold-card video { width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover; background: var(--charcoal); }
+      .sold-badge { position: absolute; top: 22px; left: 22px; z-index: 2; pointer-events: none; background: var(--gold); color: #111; font-family: 'Jost', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; padding: 6px 14px; }
+      .sold-card figcaption { padding: 14px 8px 6px; font-size: 0.85rem; color: var(--mid); letter-spacing: 0.03em; }
+      .sold-card figcaption strong { display: block; font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 400; color: var(--dark); letter-spacing: 0; margin-bottom: 2px; }
+    </style>
+    <div class="container">
+      <p class="section-label">Proof of Work</p>
+      <h2 class="section-title">Recently <em>Sold</em><br>in Roswell</h2>
+      <p class="section-intro">Take a walk through homes The Legacy Team has already brought to the closing table. Press play for the full tour.</p>
+      <div class="sold-grid">
+        <figure class="sold-card">
+          <span class="sold-badge">Sold</span>
+          <video controls preload="none" playsinline poster="roswell-sturbridge-poster.jpg">
+            <source src="roswell-sturbridge.mp4" type="video/mp4" />
+          </video>
+          <figcaption>
+            <strong>4842 Sturbridge Lane</strong>
+            Roswell, GA · Represented by Britney Javens
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+  
   <!-- FAQ -->
   <section>
     <div class="container">
