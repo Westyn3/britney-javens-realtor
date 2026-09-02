@@ -467,3 +467,245 @@ img { max-width: 100%; }
 .footer-credit{font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.55);}
 .footer-credit a{color:rgba(255,255,255,.75);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.3);transition:color .2s,border-color .2s;}
 .footer-credit a:hover{color:var(--gold);border-color:var(--gold);}
+
+
+/* ================================================================
+   MEGA FOOTER (ported from northgaluxuryrealtor.com)
+   ================================================================ */
+
+:root {
+  --container: 1140px;
+  --serif: 'Cormorant Garamond', serif;
+  --sans: 'Jost', sans-serif;
+}
+
+.footer-bar {
+  padding: 0;
+
+  background: #151614;
+}
+
+.footer-bar-inner {
+  width: 100%;
+  max-width: var(--container);
+
+  margin: 0 auto;
+
+  padding: 76px 48px 34px;
+}
+
+
+/* Main footer grid */
+
+.footer-main {
+  display: grid;
+  align-items: start;
+  gap: 100px;
+
+  padding-bottom: 65px;
+
+  grid-template-columns: minmax(280px, .85fr) 1.4fr;
+}
+
+
+/* Brand */
+
+.footer-brand {
+  max-width: 350px;
+}
+
+.footer-logo {
+  display: inline-block;
+
+  color: #fff;
+
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1;
+
+  text-decoration: none;
+}
+
+.footer-logo span {
+  display: block;
+
+  margin-top: 10px;
+
+  color: var(--gold-light);
+
+  font-family: var(--sans);
+  font-size: .58rem;
+  font-weight: 500;
+  letter-spacing: .23em;
+  text-transform: uppercase;
+}
+
+.footer-brand-copy {
+  max-width: 320px;
+
+  margin-top: 27px;
+
+  color: rgba(255, 255, 255, .52);
+
+  font-size: .8rem;
+  line-height: 1.8;
+}
+
+.footer-phone {
+  display: inline-block;
+
+  margin-top: 24px;
+
+  color: rgba(255, 255, 255, .88);
+
+  font-family: var(--serif);
+  font-size: 1.35rem;
+
+  text-decoration: none;
+
+  transition: color .2s ease;
+}
+
+.footer-phone:hover {
+  color: var(--gold-light);
+}
+
+
+/* Navigation columns */
+
+.footer-menu {
+  display: grid;
+  gap: 50px;
+
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-menu-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-menu-title {
+  width: 100%;
+
+  margin-bottom: 19px;
+  padding-bottom: 13px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+
+  color: var(--gold-light);
+
+  font-size: .6rem;
+  font-weight: 500;
+  letter-spacing: .19em;
+  text-transform: uppercase;
+}
+
+.footer-menu-col a {
+  display: inline-block;
+
+  padding: 5px 0;
+
+  color: rgba(255, 255, 255, .62);
+
+  font-size: .72rem;
+  font-weight: 300;
+  letter-spacing: .035em;
+  line-height: 1.6;
+  text-decoration: none;
+
+  transition:
+    color .2s ease,
+    transform .2s ease;
+}
+
+.footer-menu-col a:hover {
+  color: #fff;
+
+  transform: translateX(3px);
+}
+
+
+/* Bottom legal section */
+
+.footer-bottom {
+  display: grid;
+  align-items: end;
+  gap: 60px;
+
+  padding-top: 27px;
+
+  border-top: 1px solid rgba(255, 255, 255, .1);
+
+  grid-template-columns: 1fr auto;
+}
+
+.footer-legal {
+  max-width: 850px;
+}
+
+.footer-legal p {
+  color: rgba(255, 255, 255, .39);
+
+  font-size: .62rem;
+  line-height: 1.7;
+}
+
+.footer-legal p + p {
+  margin-top: 5px;
+}
+
+.footer-credit {
+  color: rgba(255, 255, 255, .36);
+
+  font-size: .58rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+.footer-credit a {
+  margin-left: 5px;
+
+  border-bottom: 1px solid rgba(212, 193, 156, .35);
+
+  color: var(--gold-light);
+
+  text-decoration: none;
+
+  transition:
+    color .2s ease,
+    border-color .2s ease;
+}
+
+.footer-credit a:hover {
+  border-color: #fff;
+
+  color: #fff;
+}
+
+
+
+
+@media (max-width: 1050px) {
+  .footer-main { gap: 60px; }
+  .footer-menu { gap: 30px; }
+}
+
+@media (max-width: 900px) {
+  .footer-bar-inner { padding-top: 62px; }
+  .footer-main { gap: 55px; grid-template-columns: 1fr; }
+  .footer-brand { max-width: 500px; }
+  .footer-brand-copy { max-width: 480px; }
+  .footer-menu { max-width: 700px; grid-template-columns: repeat(3, 1fr); }
+  .footer-bottom { align-items: start; gap: 20px; grid-template-columns: 1fr; }
+  .footer-credit { white-space: normal; }
+}
+
+@media (max-width: 600px) {
+  .footer-bar-inner { padding-right: 21px; padding-left: 21px; }
+  .footer-menu { grid-template-columns: 1fr 1fr; }
+}
