@@ -1,22 +1,26 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://northatlantarealtor.homes/</loc><priority>1.0</priority></url>
-  <url><loc>https://northatlantarealtor.homes/about.html</loc><priority>0.8</priority></url>
-  <url><loc>https://northatlantarealtor.homes/market.html</loc><priority>0.9</priority></url>
-  <url><loc>https://northatlantarealtor.homes/buying.html</loc><priority>0.8</priority></url>
-  <url><loc>https://northatlantarealtor.homes/selling.html</loc><priority>0.8</priority></url>
-  <url><loc>https://northatlantarealtor.homes/contact.html</loc><priority>0.8</priority></url>
-  <url><loc>https://northatlantarealtor.homes/trusted-vendors.html</loc><priority>0.6</priority></url>
-  <url><loc>https://northatlantarealtor.homes/blog.html</loc><priority>0.6</priority></url>
-  <url><loc>https://northatlantarealtor.homes/alpharetta.html</loc><priority>0.9</priority></url>
-  <url><loc>https://northatlantarealtor.homes/milton.html</loc><priority>0.9</priority></url>
-  <url><loc>https://northatlantarealtor.homes/roswell.html</loc><priority>0.9</priority></url>
-  <url><loc>https://northatlantarealtor.homes/johns-creek.html</loc><priority>0.9</priority></url>
-  <url><loc>https://northatlantarealtor.homes/cumming.html</loc><priority>0.9</priority></url>
-  <url><loc>https://northatlantarealtor.homes/buckhead.html</loc><priority>0.9</priority></url>
-  <url><loc>https://northatlantarealtor.homes/sandy-springs.html</loc><priority>0.9</priority></url>
-  <url><loc>https://northatlantarealtor.homes/brookhaven.html</loc><priority>0.9</priority></url>
-  <url><loc>https://northatlantarealtor.homes/chamblee.html</loc><priority>0.9</priority></url>
-  <url><loc>https://northatlantarealtor.homes/norcross.html</loc><priority>0.9</priority></url>
-  <url><loc>https://northatlantarealtor.homes/duluth.html</loc><priority>0.9</priority></url>
-</urlset>
+  <url><loc>https://northatlantarealtor.homes/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://northatlantarealtor.homes/about.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://northatlantarealtor.homes/market.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://northatlantarealtor.homes/buying.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://northatlantarealtor.homes/selling.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://northatlantarealtor.homes/trusted-vendors.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://northatlantarealtor.homes/contact.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://northatlantarealtor.homes/alpharetta.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://northatlantarealtor.homes/milton.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://northatlantarealtor.homes/roswell.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://northatlantarealtor.homes/johns-creek.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://northatlantarealtor.homes/cumming.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://northatlantarealtor.homes/buckhead.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://northatlantarealtor.homes/sandy-springs.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://northatlantarealtor.homes/brookhaven.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://northatlantarealtor.homes/chamblee.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://northatlantarealtor.homes/norcross.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://northatlantarealtor.homes/duluth.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>{{ '/blog.html' | absolute_url }}</loc><lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+{% for post in site.posts %}  <url><loc>{{ post.url | absolute_url }}</loc><lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+{% endfor %}</urlset>

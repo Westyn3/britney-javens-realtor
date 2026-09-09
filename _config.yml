@@ -1,0 +1,15 @@
+# Jekyll config — GitHub Pages builds this automatically.
+# Existing static .html pages without front matter are copied through untouched.
+title: "Britney Javens — North Atlanta Realtor"
+url: "https://northatlantarealtor.homes"
+timezone: America/New_York
+future: false
+permalink: /blog/:title/
+markdown: kramdown
+defaults:
+  - scope: { path: "", type: "posts" }
+    values: { layout: "post" }
+exclude:
+  - README.md
+  - SETUP-BLOG.md
+  - worker

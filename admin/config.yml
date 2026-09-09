@@ -1,0 +1,30 @@
+backend:
+  name: github
+  repo: Westyn3/britney-javens-realtor
+  branch: main
+  # Replace after deploying the Britney Cloudflare OAuth Worker.
+  base_url: https://REPLACE-ME.workers.dev
+
+site_url: https://northatlantarealtor.homes
+display_url: https://northatlantarealtor.homes
+logo_url: https://northatlantarealtor.homes/icon-192.png
+
+publish_mode: simple
+media_folder: "blog-images"
+public_folder: "/blog-images"
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{slug}}"
+    sortable_fields: ["date", "title"]
+    fields:
+      - { label: "Title", name: "title", widget: "string", hint: "Include the North Atlanta city or neighborhood when it fits — it helps Google." }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss ZZ", hint: "Set a future date to schedule. The daily rebuild publishes eligible posts automatically." }
+      - { label: "Area / Topic", name: "city", widget: "select", required: false,
+          options: ["North Atlanta","Alpharetta","Milton","Roswell","Johns Creek","Cumming","Buckhead","Sandy Springs","Brookhaven","Chamblee","Norcross","Duluth","Buying","Selling","Luxury","Relocation","Market Update"] }
+      - { label: "Short Description", name: "description", widget: "text", hint: "1–2 sentences. Shows on the blog page and in Google results." }
+      - { label: "Header Image (optional)", name: "image", widget: "image", required: false }
+      - { label: "Post", name: "body", widget: "markdown" }
