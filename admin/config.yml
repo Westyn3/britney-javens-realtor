@@ -3,7 +3,7 @@ backend:
   repo: Westyn3/britney-javens-realtor
   branch: main
   # Replace after deploying the Britney Cloudflare OAuth Worker.
-  base_url: https://REPLACE-ME.workers.dev
+  base_url: https://britney-blog-auth.whilliard3.workers.dev
 
 site_url: https://northatlantarealtor.homes
 display_url: https://northatlantarealtor.homes
