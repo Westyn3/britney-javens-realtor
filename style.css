@@ -361,9 +361,13 @@ img { max-width: 100%; }
   /* ── Mobile menu: scrollable + bigger tap targets ── */
   .mobile-menu {
     max-height: calc(100vh - var(--nav-h));
+    max-height: calc(100dvh - var(--nav-h));
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
     gap: 0;
     padding: 8px 24px 32px;
+    padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 48px);
   }
   .mobile-menu > a {
     padding: 14px 0;
