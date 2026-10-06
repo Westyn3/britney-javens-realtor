@@ -378,6 +378,7 @@ img { max-width: 100%; }
   /* City submenu: indented, smaller, clearly grouped under Markets */
   .mobile-menu .mobile-submenu {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 8px 6px;
     padding: 12px 0 14px 16px;
