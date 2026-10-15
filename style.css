@@ -6,7 +6,7 @@
   --charcoal: #1c1c1c;
   --dark: #111111;
   --gold: #b8963e;
-  --gold-text: #8a6e2a;
+  --gold-text: #7d6224;
   --gold-light: #d4aa5a;
   --gold-pale: #f0e4c8;
   --mid: #6b6b6b;
@@ -652,7 +652,7 @@ img { max-width: 100%; }
 }
 
 .footer-legal p {
-  color: rgba(255, 255, 255, .39);
+  color: rgba(255, 255, 255, .58);
 
   font-size: .62rem;
   line-height: 1.7;
@@ -663,7 +663,7 @@ img { max-width: 100%; }
 }
 
 .footer-credit {
-  color: rgba(255, 255, 255, .36);
+  color: rgba(255, 255, 255, .55);
 
   font-size: .58rem;
   letter-spacing: .12em;
