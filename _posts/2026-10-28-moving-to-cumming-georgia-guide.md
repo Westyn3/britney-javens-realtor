@@ -39,7 +39,7 @@ Cumming also sits right next to Lake Lanier, so boating, paddleboarding, and lak
 
 ## Finding the Right Home in Cumming
 
-Cumming offers a wide range of housing: established neighborhoods with mature trees, newer construction communities with pools and amenities, townhomes close to shopping and dining, and lake-area homes for those who want to be near the water. A few of my favorites have their own guides — [Vickery](/vickery.html), [Windermere](/windermere.html), and [Laurel Springs](/laurel-springs.html). The right fit depends on your priorities:
+Cumming offers a wide range of housing: established neighborhoods with mature trees, newer construction communities with pools and amenities, townhomes close to shopping and dining, and lake-area homes for those who want to be near the water. A few of my favorites have their own guides — [Vickery](/vickery.html), [Windermere](/windermere.html), [Laurel Springs](/laurel-springs.html), [St. Marlo Country Club](/st-marlo.html), [Hampton Golf Village](/hampton-golf-village.html), [Chattahoochee River Club](/chattahoochee-river-club.html), [Three Chimneys Farm](/three-chimneys-farm.html), [James Creek](/james-creek.html), and [Fieldstone](/fieldstone.html). The right fit depends on your priorities:
 
 - **Schools:** Which school cluster matters most to you?
 - **Commute:** How often will you drive to Alpharetta or Atlanta, and how close do you want to be to GA-400?

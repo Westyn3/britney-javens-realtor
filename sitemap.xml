@@ -29,6 +29,12 @@ layout: null
   <url><loc>https://northatlantarealtor.homes/windermere.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://northatlantarealtor.homes/laurel-springs.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://northatlantarealtor.homes/white-columns.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://northatlantarealtor.homes/st-marlo.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://northatlantarealtor.homes/hampton-golf-village.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://northatlantarealtor.homes/chattahoochee-river-club.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://northatlantarealtor.homes/three-chimneys-farm.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://northatlantarealtor.homes/james-creek.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://northatlantarealtor.homes/fieldstone.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>{{ '/blog.html' | absolute_url }}</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 {% for post in site.posts %}  <url><loc>{{ post.url | absolute_url }}</loc><lastmod>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 {% endfor %}</urlset>
