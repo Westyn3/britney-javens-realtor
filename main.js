@@ -138,3 +138,33 @@ if (form) {
 
   numbers.forEach((n) => io.observe(n));
 })();
+
+/* ───── Lead-action tracking → GA4 ─────
+   Fires events for the three actions that mean a lead:
+   tapping a phone number, clicking Calendly, submitting the form. */
+(() => {
+  const track = (name, params) => {
+    if (typeof gtag === 'function') gtag('event', name, params);
+  };
+
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest && e.target.closest('a');
+    if (!a) return;
+    const href = a.getAttribute('href') || '';
+    if (href.startsWith('tel:')) {
+      track('phone_call_click', {
+        phone_number: href.replace('tel:', ''),
+        page_path: location.pathname
+      });
+    } else if (href.includes('calendly.com')) {
+      track('calendly_click', { page_path: location.pathname });
+    }
+  });
+
+  const form = document.getElementById('contact-form');
+  if (form) {
+    form.addEventListener('submit', () => {
+      track('generate_lead', { page_path: location.pathname });
+    });
+  }
+})();
