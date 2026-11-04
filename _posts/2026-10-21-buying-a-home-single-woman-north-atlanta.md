@@ -1,8 +1,9 @@
 ---
 title: "Buying a Home as a Single Woman in North Atlanta: A Guide From an Agent Who's Done It"
+seo_title: "Buying a Home as a Single Woman in North Atlanta"
 date: 2026-10-21 06:00:00 -0400
 city: "Buying"
-description: "Single women are one of the biggest forces in today's housing market. A step-by-step guide to buying solo in North Atlanta — from an agent who bought her own home as a single businesswoman."
+description: "A step-by-step guide to buying solo in North Atlanta, from an agent who bought her own home as a single businesswoman."
 ---
 
 If you're a single woman thinking about buying a home, here's something worth knowing: you're not an outlier. You're one of the biggest forces in today's housing market.

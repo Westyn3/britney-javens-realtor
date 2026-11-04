@@ -1,5 +1,6 @@
 ---
 title: "Swim/Tennis Neighborhoods and Top Schools in Alpharetta: A Family Guide"
+seo_title: "Alpharetta Swim/Tennis Neighborhoods & Top Schools"
 date: 2026-10-02 06:00:00 -0400
 city: "Alpharetta"
 description: "How to shop Alpharetta the way local families actually do — by swim/tennis community and school attendance zone, not just by house."

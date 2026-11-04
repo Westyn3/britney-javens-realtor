@@ -1,8 +1,9 @@
 ---
 title: "Moving to Cumming, Georgia: A Local REALTOR®'s Guide to Life in Forsyth County"
+seo_title: "Moving to Cumming, GA: A Local Realtor's Guide"
 date: 2026-10-28 06:00:00 -0400
 city: "Cumming"
-description: "Thinking about moving to Cumming, GA? A local's guide to Forsyth County schools, the commute, Cumming City Center, Lake Lanier living, and finding the right neighborhood — from a REALTOR® who lives here."
+description: "Moving to Cumming, GA? A local's guide to Forsyth County schools, the commute, Cumming City Center, Lake Lanier and finding the right neighborhood."
 ---
 
 Thinking about moving to Cumming, Georgia? You're in good company. Over the past several years, Cumming and the rest of Forsyth County have become one of the most sought-after places to live in metro Atlanta, and as someone who lives here, I can tell you it's easy to see why.
