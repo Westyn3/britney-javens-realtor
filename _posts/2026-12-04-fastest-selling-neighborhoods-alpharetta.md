@@ -1,5 +1,6 @@
 ---
 title: "The Fastest-Selling Neighborhoods in Alpharetta, GA (And Why They Move)"
+seo_title: "The Fastest-Selling Neighborhoods in Alpharetta, GA"
 date: 2026-12-04 06:00:00 -0500
 city: "Alpharetta"
 description: "Which Alpharetta neighborhoods go under contract fastest, what they have in common, and how buyers win them — from a Realtor® who tracks the market weekly."

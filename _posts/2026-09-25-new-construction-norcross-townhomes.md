@@ -1,8 +1,9 @@
 ---
 title: "New Construction in Norcross: What Buyers Should Know in 2026"
+seo_title: "New Construction in Norcross: What Buyers Should Know"
 date: 2026-09-25 06:00:00 -0400
 city: "Norcross"
-description: "Norcross is one of the inner metro's quietest new-construction stories. Where the townhomes are rising, what they cost, and why you need your own agent at the sales office."
+description: "Norcross is one of the inner metro's quietest new-construction stories. Where townhomes are rising, what they cost, and why you need your own agent."
 ---
 
 Norcross doesn't get the new-construction headlines that the far suburbs do — and that's exactly why it's worth a look. The action here isn't sprawling master-planned subdivisions; it's townhome communities and infill builds rising close to the historic downtown and along the Peachtree Corners edge.

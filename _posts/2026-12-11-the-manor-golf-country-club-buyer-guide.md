@@ -1,8 +1,9 @@
 ---
 title: "The Manor Golf & Country Club: What Buyers Should Know Before Touring"
+seo_title: "The Manor Golf & Country Club: What Buyers Should Know"
 date: 2026-12-11 06:00:00 -0500
 city: "Milton"
-description: "Homes for sale in The Manor Golf and Country Club — membership, the Tom Watson course, estate pricing, and how Milton's premier gated community actually buys and sells."
+description: "The Manor Golf and Country Club in Milton: membership, the Tom Watson course, estate pricing, and how Milton's premier gated community buys and sells."
 ---
 
 When buyers search "homes for sale in The Manor Golf and Country Club," they usually already know the headline: Milton's most prestigious gated address, a Tom Watson-designed course, estates that anchor the top of the North Fulton market. What the listing photos don't tell you is how this community actually *transacts* — and that's where buyers get surprised.

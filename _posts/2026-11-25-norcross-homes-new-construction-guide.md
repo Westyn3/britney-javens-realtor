@@ -1,8 +1,9 @@
 ---
 title: "Homes for Sale in Norcross, GA: Neighborhoods, New Construction & What Your Money Buys"
+seo_title: "Homes for Sale in Norcross, GA: Neighborhoods & New Builds"
 date: 2026-11-25 06:00:00 -0500
 city: "Norcross"
-description: "The complete Norcross buyer's guide — historic downtown, new construction and townhomes, established neighborhoods, and how prices compare across the GA-400/I-85 corridor."
+description: "The complete Norcross buyer's guide: historic downtown, new construction and townhomes, established neighborhoods, and how prices compare nearby."
 ---
 
 Norcross keeps showing up in my buyers' searches for one reason: it's one of the last places inside the metro's northeast arc where the math still works. Historic charm, an actual walkable downtown, I-85 and Peachtree Industrial access — at prices that make Alpharetta buyers do a double-take. Here's the full picture.

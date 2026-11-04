@@ -1,5 +1,6 @@
 ---
 title: "Relocating to North Atlanta: How to House-Hunt from Another State"
+seo_title: "Relocating to North Atlanta: House-Hunting From Out of State"
 date: 2026-11-20 06:00:00 -0500
 city: "Relocation"
 description: "Moving to metro Atlanta from out of state? How to narrow eleven very different communities down to yours — mostly before you ever fly in."

@@ -1,8 +1,9 @@
 ---
 title: "Moving to Roswell, Georgia: A Local REALTOR®'s Guide to One of North Atlanta's Favorite Cities"
+seo_title: "Moving to Roswell, GA: A Local Realtor's Guide"
 date: 2026-11-04 06:00:00 -0500
 city: "Roswell"
-description: "A local's guide to living in Roswell, GA — Canton Street, the historic district, riverside parks and trails, schools, and how to find the right neighborhood, from a REALTOR® who knows it street by street."
+description: "A local's guide to living in Roswell, GA: Canton Street, the historic district, riverside parks and trails, schools, and finding the right neighborhood."
 ---
 
 Roswell has a way of winning people over. Between its historic downtown, riverside parks, standout restaurants, and easy access to the rest of metro Atlanta, it's one of the most well-rounded places to live in North Fulton. If you're thinking about making the move, I'd love to show you around.

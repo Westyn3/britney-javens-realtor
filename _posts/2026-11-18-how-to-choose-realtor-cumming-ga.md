@@ -1,5 +1,6 @@
 ---
 title: "How to Choose a Realtor in Cumming, GA — From One Who Lives Here"
+seo_title: "How to Choose a Realtor in Cumming, GA"
 date: 2026-11-18 06:00:00 -0500
 city: "Cumming"
 description: "What actually matters when hiring a realtor in Cumming and Forsyth County — and the questions that separate a local expert from an agent with a license."

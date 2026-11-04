@@ -1,8 +1,9 @@
 ---
 title: "Moving to Vinings, Georgia: Small-Town Charm Minutes From Buckhead and The Battery"
+seo_title: "Moving to Vinings, GA: Small-Town Charm Near Buckhead"
 date: 2026-11-11 06:00:00 -0500
 city: "Vinings"
-description: "A guide to living in Vinings, GA — the historic village, Vinings Jubilee, Chattahoochee trails, The Battery, Cobb County tax advantages, and how to find the right home in one of metro Atlanta's best-located communities."
+description: "Living in Vinings, GA: the historic village, Vinings Jubilee, Chattahoochee trails, The Battery, Cobb County taxes, and how to find the right home."
 ---
 
 If you want the convenience of being close to the city without giving up a leafy, small-town feel, [Vinings](/vinings.html) deserves a spot at the top of your list. Tucked along the Chattahoochee River just across from [Buckhead](/buckhead.html), Vinings blends history, great restaurants, outdoor recreation, and one of the most convenient locations in metro Atlanta.

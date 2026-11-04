@@ -1,5 +1,6 @@
 ---
 title: "Why Winter Might Be the Smartest Time to Buy in North Atlanta"
+seo_title: "Why Winter May Be the Smartest Time to Buy in North Atlanta"
 date: 2026-11-27 06:00:00 -0500
 city: "Buying"
 description: "While everyone else waits for spring, winter buyers quietly get the best of the market. Here's the case."

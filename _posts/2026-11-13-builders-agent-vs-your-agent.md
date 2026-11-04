@@ -1,5 +1,6 @@
 ---
 title: "The Builder's Agent Is Not Your Agent: New Construction, Explained"
+seo_title: "The Builder's Agent Is Not Your Agent: New Construction"
 date: 2026-11-13 06:00:00 -0500
 city: "Buying"
 description: "The most expensive misunderstanding in new-construction buying — and how to walk into a sales office protected."
