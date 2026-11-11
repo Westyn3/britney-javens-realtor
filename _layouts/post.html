@@ -147,7 +147,10 @@
     <div class="container" style="max-width:820px;">
       <p class="section-label">{{ page.date | date: "%B %-d, %Y" }}{% if page.city %} · {{ page.city }}{% endif %} · By Britney Javens</p>
       <h1 style="font-size:clamp(2.2rem,4vw,3.4rem);">{{ page.title }}</h1>
+{%- assign lead_label = page.lead_label | default: page.city -%}{%- case lead_label -%}{%- when "Buying","Selling","Market Update","Relocation",nil,"" -%}{%- assign lead_label = "North Atlanta" -%}{%- endcase -%}
       {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+      <a href="#alerts" class="btn-gold">Get {{ lead_label }} Listing Alerts</a>
+      <p class="hero-phone">Or call/text Britney: <a href="tel:+16787808238">(678) 780-8238</a></p>
     </div>
   </div>
 
@@ -168,6 +171,8 @@
       </div>
     </div>
   </section>
+
+  {% include lead-capture.html label=lead_label %}
 
 </main>
 

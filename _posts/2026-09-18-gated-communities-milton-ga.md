@@ -2,6 +2,7 @@
 title: "Gated Communities in Milton, GA: The 2026 Guide"
 date: 2026-09-18 06:00:00 -0400
 city: "Milton"
+lead_label: "Milton gated community"
 description: "The Manor, Crooked Creek, Blue Valley, White Columns and more — what it costs to live behind the gates in Milton, and how homes there actually change hands."
 ---
 

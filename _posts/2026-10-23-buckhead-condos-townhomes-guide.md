@@ -2,6 +2,7 @@
 title: "Buckhead Condos & Townhomes: A Buyer's Guide"
 date: 2026-10-23 06:00:00 -0400
 city: "Buckhead"
+lead_label: "Buckhead condo and townhome"
 description: "Walkable Buckhead living without the estate price tag — how to shop condos and townhomes in Atlanta's most famous neighborhood."
 ---
 

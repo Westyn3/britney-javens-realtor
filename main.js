@@ -168,3 +168,46 @@ if (form) {
     });
   }
 })();
+
+/* ───── Lead-capture forms (.lead-form) + sticky mobile call bar ───── */
+(() => {
+  const track = (name, params) => { if (typeof gtag === 'function') gtag('event', name, params); };
+
+  document.querySelectorAll('form.lead-form').forEach((f) => {
+    f.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const hp = f.querySelector('input[name="_gotcha"]');
+      if (hp && hp.value) return;
+      const btn = f.querySelector('button[type="submit"]');
+      const ok = f.parentElement.querySelector('.form-success');
+      const label = btn.textContent;
+      btn.textContent = 'Sending...'; btn.disabled = true;
+      try {
+        const res = await fetch(f.getAttribute('action'), { method: 'POST', body: new FormData(f), headers: { 'Accept': 'application/json' } });
+        if (res.ok) {
+          track('generate_lead', { page_path: location.pathname, lead_source: f.dataset.source || 'lead_form' });
+          f.reset();
+          if (ok) ok.style.display = 'block';
+          btn.textContent = 'Sent!';
+        } else { btn.textContent = 'Error — please call (678) 780-8238'; btn.disabled = false; }
+      } catch {
+        btn.textContent = 'Error — please call (678) 780-8238'; btn.disabled = false;
+        setTimeout(() => { btn.textContent = label; }, 4000);
+      }
+    });
+  });
+
+  // Sticky Call / Text bar (mobile only via CSS). Skipped on the contact page.
+  if (!/\/contact(-me)?(\.html)?\/?$/.test(location.pathname)) {
+    const bar = document.createElement('div');
+    bar.className = 'sticky-call';
+    bar.innerHTML = '<a href="tel:+16787808238" aria-label="Call Britney Javens">&#128222; Call Britney</a>' +
+                    '<a href="sms:+16787808238" aria-label="Text Britney Javens">&#128172; Text Me</a>';
+    document.body.appendChild(bar);
+    document.body.classList.add('has-sticky-call');
+    // tel: taps are already counted as phone_call_click by the global handler above.
+    bar.querySelector('a[href^="sms:"]').addEventListener('click', () => {
+      track('text_click', { phone_number: '6787808238', page_path: location.pathname, placement: 'sticky_bar' });
+    });
+  }
+})();

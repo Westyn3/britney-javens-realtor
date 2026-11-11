@@ -740,3 +740,26 @@ img { max-width: 100%; }
   font-family: inherit; font-size: 1em; font-weight: bold; letter-spacing: normal;
   line-height: inherit;
 }
+
+/* ── LEAD CAPTURE + STICKY CALL BAR ── */
+.lead-capture { background: var(--cream); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 56px 0; }
+.lead-capture .lead-inner { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+.lead-capture h2 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(1.7rem, 3vw, 2.4rem); color: var(--dark); line-height: 1.2; margin: 6px 0 10px; }
+.lead-capture h2 em { font-style: italic; color: var(--gold); }
+.lead-capture .lead-sub { font-size: 0.95rem; color: var(--mid); line-height: 1.7; margin-bottom: 22px; }
+.lead-capture .contact-form { gap: 14px; }
+.lead-capture .lead-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.lead-capture select { padding: 12px 16px; border: 1px solid var(--border); background: var(--warm-white); font-family: 'Jost', sans-serif; font-size: 0.9rem; color: var(--charcoal); }
+.lead-capture .lead-or { margin-top: 16px; font-size: 0.88rem; color: var(--mid); }
+.lead-capture .lead-or a { color: var(--gold-text); font-weight: 600; }
+.lead-capture .lead-hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.lead-capture .form-success { margin-top: 14px; }
+@media (max-width: 600px) { .lead-capture .lead-row { grid-template-columns: 1fr; } .lead-capture { padding: 44px 0; } }
+
+.sticky-call { display: none; }
+@media (max-width: 768px) {
+  .sticky-call { display: flex; position: fixed; left: 0; right: 0; bottom: 0; z-index: 90; background: var(--charcoal); border-top: 2px solid var(--gold); padding-bottom: env(safe-area-inset-bottom); }
+  .sticky-call a { flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 15px 8px; color: var(--cream); font-family: 'Jost', sans-serif; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; }
+  .sticky-call a + a { border-left: 1px solid rgba(255,255,255,0.18); background: var(--gold); color: #111; }
+  body.has-sticky-call { padding-bottom: calc(52px + env(safe-area-inset-bottom)); }
+}
