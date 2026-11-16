@@ -156,6 +156,8 @@ if (form) {
         phone_number: href.replace('tel:', ''),
         page_path: location.pathname
       });
+    } else if (href.startsWith('mailto:')) {
+      track('email_click', { page_path: location.pathname });
     } else if (href.includes('calendly.com')) {
       track('calendly_click', { page_path: location.pathname });
     }
