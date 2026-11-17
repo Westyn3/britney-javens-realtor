@@ -1,9 +1,10 @@
 ---
 title: "Buckhead Condos & Townhomes: A Buyer's Guide"
+seo_title: "Lock-and-Leave Condos & Townhomes in Buckhead"
 date: 2026-10-23 06:00:00 -0400
 city: "Buckhead"
 lead_label: "Buckhead condo and townhome"
-description: "Walkable Buckhead living without the estate price tag — how to shop condos and townhomes in Atlanta's most famous neighborhood."
+description: "Buying a condo or townhome in Buckhead? A local guide to lock-and-leave living, what to check in the HOA, and how the Buckhead condo market works."
 ---
 
 Buckhead means different things to different buyers. For every estate on Tuxedo Road, there are hundreds of buyers shopping something else entirely: a lock-and-leave condo near the shops, or a townhome that trades yard work for walkability.
